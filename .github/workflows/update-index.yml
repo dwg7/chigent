@@ -40,6 +40,9 @@ jobs:
           git add -A
           git commit -m "索引を作り直す(layers-martin の更新に追従)"
           git push origin "$branch"
-          gh pr create --base main --head "$branch" \
+          if ! gh pr create --base main --head "$branch" \
             --title "索引を作り直す(layers-martin の更新に追従)" \
-            --body "週次の自動更新。data/layers-index.json と docs/index/ を作り直した。npm test は通っている。マージすると GitHub Pages に反映される。"
+            --body "週次の自動更新。data/layers-index.json と docs/index/ を作り直した。npm test は通っている。マージすると GitHub Pages に反映される。"; then
+            echo "::error::ブランチ $branch は push 済みだが、PR を作れなかった。Settings → Actions → General の 'Allow GitHub Actions to create and approve pull requests' を有効にするか、このブランチから手で PR を作る。"
+            exit 1
+          fi
