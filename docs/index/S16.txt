@@ -7,7 +7,6 @@ regmos | REGMOS等 | v
 sar_terms_service | SAR干渉画像の利用について | v
 what_is_clip_volcano | 火山（定常）とは | v
 ## 基準点・地磁気・地殻変動 > 干渉SAR > だいち2号（ALOS-2）/ だいち4号（ALOS-4） > SAR干渉画像に現れる誤差の事例
- | SAR干渉画像に現れる色の変化 | v
 ex_atmosphere | 雨雲による影響 | v
 ex_atmosphere2 | 大気と地形による影響 | v
 ex_cy | 造成地での非干渉 | v

@@ -10,7 +10,8 @@
 import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 
-const root = (process.argv[2] ?? "https://hfu.github.io/layers-martin/").replace(/\/?$/, "/");
+const PUBLIC_ROOT = "https://hfu.github.io/layers-martin/";
+const root = (process.argv[2] ?? PUBLIC_ROOT).replace(/\/?$/, "/");
 
 async function load(name: string): Promise<{ text: string; json: any }> {
   const text = root.startsWith("http")
@@ -49,7 +50,7 @@ const boundsOf = (b: unknown): Entry["b"] => {
 const layers: Record<string, Entry> = {};
 
 for (const e of report.json.excluded as any[]) {
-  if (layers[e.id]) continue;
+  if (!e.id || layers[e.id]) continue; // ID の無い項目(layers.txt の説明用の行)は索引に入れない
   layers[e.id] = { t: plain(e.title ?? ""), p: (e.path ?? []).map(plain).join(" > "), s: e.reason, x: e.extension };
 }
 // catalog に載るものが優先(同じ ID が別の場所で除外されていても、使えるものとして扱う)。
@@ -140,7 +141,7 @@ await writeFile(
   new URL("../data/layers-index.json", import.meta.url),
   JSON.stringify({
     source: {
-      root,
+      root: PUBLIC_ROOT, // ローカルのコピーから作ったときも、来歴には公開 URL を書く(手元のパスを残さない)
       catalogSha256: createHash("sha256").update(catalog.text).digest("hex"),
       reportSha256: createHash("sha256").update(report.text).digest("hex"),
       generatedAt: new Date().toISOString(),
