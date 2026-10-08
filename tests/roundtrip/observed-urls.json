@@ -1,0 +1,22 @@
+[
+  {
+    "name": "relief overlay, blend=0 explicit, d=vl",
+    "url": "https://maps.gsi.go.jp/#5/36.104611/140.084556/&base=std&ls=std%7Crelief&blend=0&disp=11&lcd=relief&vs=c1j0h0k0l0u0t0z0r0s0m0f1&d=vl",
+    "canonical": "https://maps.gsi.go.jp/#5/36.104611/140.084556/&base=std&ls=std%7Crelief&blend=0&disp=11&lcd=relief&vs=c1j0h0k0l0u0t0z0r0s0m0f1&d=vl"
+  },
+  {
+    "name": "three layers, no blend, d=v",
+    "url": "https://maps.gsi.go.jp/#14/35.798184/140.247946/&base=std&ls=std%7Cexperimental_landformclassification1%7Cexperimental_landformclassification2&disp=111&lcd=experimental_landformclassification2&vs=c1j0h0k0l0u0t0z0r0s0m0f1&d=v",
+    "canonical": "https://maps.gsi.go.jp/#14/35.798184/140.247946/&base=std&ls=std%7Cexperimental_landformclassification1%7Cexperimental_landformclassification2&disp=111&lcd=experimental_landformclassification2&vs=c1j0h0k0l0u0t0z0r0s0m0f1&d=v"
+  },
+  {
+    "name": "literal | in ls (normalized to %7C), no d",
+    "url": "https://maps.gsi.go.jp/#16/34.640420/133.721638/&base=std&ls=std|experimental_landformclassification1|disaster_lore_all&disp=111&lcd=disaster_lore_all&vs=c1j0h0k0l0u0t0z0r0s0m0f1",
+    "canonical": "https://maps.gsi.go.jp/#16/34.640420/133.721638/&base=std&ls=std%7Cexperimental_landformclassification1%7Cdisaster_lore_all&disp=111&lcd=disaster_lore_all&vs=c1j0h0k0l0u0t0z0r0s0m0f1"
+  },
+  {
+    "name": "vs contains g (zoom guide), blend=0, d=m",
+    "url": "https://maps.gsi.go.jp/#5/37.565484/139.412108/&base=std&ls=std%7Cjpgeo2024&blend=0&disp=11&lcd=jpgeo2024&vs=c1g1j0h0k0l0u0t0z0r0s0m0f2&d=m",
+    "canonical": "https://maps.gsi.go.jp/#5/37.565484/139.412108/&base=std&ls=std%7Cjpgeo2024&blend=0&disp=11&lcd=jpgeo2024&vs=c1g1j0h0k0l0u0t0z0r0s0m0f2&d=m"
+  }
+]

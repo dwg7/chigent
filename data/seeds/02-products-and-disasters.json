@@ -1,0 +1,53 @@
+[
+ {
+  "url": "https://www.gsi.go.jp/bousai.html",
+  "sourceType": "product",
+  "note": "災害対応: 災害ごとの「〇〇に関する情報」ページ(地図製品としての公開情報)",
+  "follow": "gsi\\.go\\.jp/BOUSAI/[^/]+\\.html$",
+  "maxFollow": 60
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/lc_index.html",
+  "sourceType": "product",
+  "note": "土地条件図"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/lc_cd25000.html",
+  "sourceType": "product"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/engan16.html",
+  "sourceType": "product",
+  "note": "沿岸海域基礎調査",
+  "follow": "bousaichiri/engan[0-9]+\\.html$",
+  "maxFollow": 10
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/release_thematic_maps_20180606.html",
+  "sourceType": "product",
+  "note": "陰影起伏図・赤色立体地図"
+ },
+ {
+  "url": "https://www.gsi.go.jp/kankyochiri/Laser_map.html",
+  "sourceType": "product",
+  "note": "デジタル標高地形図",
+  "follow": "kankyochiri/degitalelevationmap_[a-z]+\\.html$",
+  "maxFollow": 10
+ },
+ {
+  "url": "https://www.gsi.go.jp/hokuriku/digitalmap-index.html",
+  "sourceType": "product"
+ },
+ {
+  "url": "https://www.gsi.go.jp/chubu/cb-lptop.html",
+  "sourceType": "product"
+ },
+ {
+  "url": "https://www.gsi.go.jp/riyousya01.html",
+  "sourceType": "explanatory"
+ },
+ {
+  "url": "https://www.gsi.go.jp/tizu-kutyu.html",
+  "sourceType": "explanatory"
+ }
+]

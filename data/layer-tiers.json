@@ -1,0 +1,4727 @@
+{
+ "generatedFrom": {
+  "links": 1258,
+  "pages": 76
+ },
+ "rule": "core = base maps | family in >=2 product pages | family in >=1 product page and >=1 explanatory page | family in >=3 explanatory pages; periphery = other evidence; layers without evidence are periphery by default",
+ "tiers": {
+  "core": 367,
+  "periphery": 244,
+  "noEvidencePeriphery": 13232
+ },
+ "layers": {
+  "vlcd_esn": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "vlcd_chokai": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 2,
+   "productLinks": 10,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_nks": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "vlcd_asamayama": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "vlcd_mdg": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "vlcd_yakedake": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "vlcd_hakone": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 2,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_koz": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "vlcd_hachijojima": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "vlcd_trg": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "vlcd_suwanosejima": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "vbmd_bm": {
+   "tier": "core",
+   "family": "火山基本図",
+   "productPages": 2,
+   "productLinks": 38,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_fuji": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "afm": {
+   "tier": "core",
+   "family": "活断層図",
+   "productPages": 3,
+   "productLinks": 252,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "afm_spec": {
+   "tier": "core",
+   "family": "活断層図",
+   "productPages": 2,
+   "productLinks": 251,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lcmfc2": {
+   "tier": "core",
+   "family": "治水地形分類図",
+   "productPages": 6,
+   "productLinks": 26,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "experimental_landformclassification1": {
+   "tier": "core",
+   "family": "地形分類(ベクトルタイル)",
+   "productPages": 3,
+   "productLinks": 3,
+   "explPages": 7,
+   "listingPages": 1
+  },
+  "experimental_landformclassification2": {
+   "tier": "core",
+   "family": "地形分類(ベクトルタイル)",
+   "productPages": 3,
+   "productLinks": 3,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "toho4": {
+   "tier": "core",
+   "family": "年代別の写真",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 3
+  },
+  "toho3": {
+   "tier": "core",
+   "family": "年代別の写真",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 3
+  },
+  "toho2": {
+   "tier": "core",
+   "family": "年代別の写真",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 3
+  },
+  "toho1": {
+   "tier": "core",
+   "family": "年代別の写真",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 2,
+   "listingPages": 3
+  },
+  "d1-no805": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no807": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no808": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no887": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no943": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no546": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no547": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no572": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no812": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no813": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no814": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no815": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no816": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no817": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no818": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no819": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no820": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no821": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no822": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no823": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no840": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no854": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no888": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no944": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no945": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no946": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no947": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no948": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no949": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no455": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no509": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no532": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no533": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no534": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no544": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no545": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no537": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no785": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no788": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no804": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no809": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no810": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no827": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no833": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no839": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no842": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no846": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no856": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no860": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no865": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no866": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no889": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no890": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no891": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no892": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no893": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no894": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no895": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no896": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no950": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no951": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no952": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no953": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no954": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no955": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no956": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no961": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no962": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no527": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no528": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no529": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no530": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no531": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no525": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no776": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no830": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no861": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no897": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no898": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no957": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no958": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no959": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no960": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no462": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no504": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no505": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no521": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no824": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no828": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no829": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no834": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no855": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no862": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no863": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no878": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no963": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no964": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no965": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no966": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no461": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no570": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no571": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no811": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no845": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no852": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no857": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no858": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no859": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no899": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no900": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no901": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no902": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no903": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no904": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no905": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no967": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no968": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no969": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no970": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no971": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no972": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no806": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no825": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no826": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no849": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no906": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no907": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no908": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no973": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no974": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no975": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no976": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no977": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no508": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no784": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no792": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no794": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no795": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no841": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no847": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no882": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no978": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no979": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no980": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no981": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no463": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no596": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no597": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no773": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no774": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no775": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no790": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no791": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no796": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no799": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no800": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no801": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no802": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no803": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no835": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no848": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no850": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no851": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no883": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no909": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no910": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no911": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "d1-no982": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no983": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no984": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no985": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no986": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no987": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no988": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "d1-no989": {
+   "tier": "core",
+   "family": "デジタル標高地形図",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "lcm25k_2012": {
+   "tier": "core",
+   "family": "土地条件図(数値地図25000)",
+   "productPages": 2,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lcm25k": {
+   "tier": "core",
+   "family": "土地条件図(数値地図25000)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lcm25k_spec": {
+   "tier": "core",
+   "family": "土地条件図(数値地図25000)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vbmd_colorrel": {
+   "tier": "core",
+   "family": "火山基本図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vbmd_pm": {
+   "tier": "core",
+   "family": "火山基本図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vbm": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_meakan": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_tokachi": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "vlcd_tarumae": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_usu": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_hokoma": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_iwate": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_akitayake": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_akitakoma": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_kurikoma": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_adatara": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_bandai": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_kusatsu": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_niigatayake": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_ontake": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_izuo": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_miyake": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_kuju": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_aso": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_unzen": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_kiri": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_sakura": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_satsumaio": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "vlcd_satsumatake": {
+   "tier": "core",
+   "family": "火山土地条件図",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lakedata": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lake1": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lakedata_spec": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "tenkei_chikaku": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "tenkei_kazan": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "tenkei_chishitsu": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "tenkei_kasen": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "tenkei_umi": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "tenkei_hyoga": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "tenkei_sonota": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ccm1": {
+   "tier": "core",
+   "family": "沿岸海域土地条件図",
+   "productPages": 9,
+   "productLinks": 9,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ccm2": {
+   "tier": "core",
+   "family": "沿岸海域土地条件図",
+   "productPages": 9,
+   "productLinks": 9,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_capital2005": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_capital2000": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_capital1994": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_capital1989": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_capital1984": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_capital1979": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_capital1974": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_chubu2003": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_chubu1997": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_chubu1991": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_chubu1987": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_chubu1982": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_chubu1977": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_kinki2008": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_kinki2001": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_kinki1996": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_kinki1991": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_kinki1985": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_kinki1979": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "lum4bl_kinki1974": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_12": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_11": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_10": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_09": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_08": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_07": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_06": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_05": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_04": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_03": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_02": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2012_01": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_12": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_11": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_10": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_09": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_08": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_07": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_06": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_05": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_04": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_03": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_02": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2011_01": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_12": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_11": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_10": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_09": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_08": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_07": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_06": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_05": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_04": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_03": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_02": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2010_01": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_12": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_11": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_10": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_09": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_08": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_07": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_06": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_05": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_04": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_03": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_02": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2009_01": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_12": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_11": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_10": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_09": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_08": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_07": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_06": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_05": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_04": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_03": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_02": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2008_01": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_12": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_11": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_10": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_09": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_08": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_07": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_06": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_05": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_04": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_03": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_02": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2007_01": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_12": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_11": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_10": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_09": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_08": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_07": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_06": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_05": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_04": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_03": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_02": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2006_01": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_12": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_11": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_10": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_09": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_08": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_07": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_06": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_05": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_04": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_03": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_02": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2005_01": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2004_12": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2004_11": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2004_10": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2004_09": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2004_08": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2004_07": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2004_06": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2004_05": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ndvi_250m_2004_04": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "terrainclassification1": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "landuseclassification1": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "landuseclassification2": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_tokyo": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_saitamaChiba1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_saitamaChiba2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_saitamaChiba3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_saitamaChiba4": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_SaitamaChibaIbaragi1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_sizuoka": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_gifuAichiMie1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_gifuAichiMie2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_gifuAichiMie3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_gifuAichiMie4": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_gifuAichiMie5": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_gifuAichiMie6": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kinki1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kinki2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kinki3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_chugoku1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_chugoku2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_chugoku3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_chugoku4": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_chugoku7": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_shikoku1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_shikoku2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_shikoku3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_shikoku4": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_shikoku8": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kyushu7": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kyushu8": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kyushu9": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kyushu1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kyushu2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kyushu3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kyushu6": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kyushu4": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_kyushu5": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_hokuriku1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_hokuriku2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_hokuriku3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_hokuriku4": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_hokuriku5": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_sizuoka1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_shikoku9": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_chugoku6": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_shikoku5": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_shikoku6": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_flood_shikoku7": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_stormSurge_shikoku1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_stormSurge_kyushu1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_Landslide_kyushu3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_Landslide_kyushu4": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_Landslide_chugoku1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_Landslide_kyushu2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_Landslide_kyushu1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_Tsunami_kyushu1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_Volcano_kyushu1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_kantou": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_SaitamaChibaibaragi1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_sizuoka1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_sizuoka2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_noubi1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_noubi2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_tounankai1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_tounankai2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_tounankai3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_mikawa": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_kanei": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_hyougoNanbu1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_hyougoNanbu2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_shikoku1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_shikoku2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_kyushu1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_hokuriku1": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_hokuriku2": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_hokuriku3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_hokuriku4": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_quake_sizuoka3": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "DisasterHist_landSubsidence": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "skhb01": {
+   "tier": "core",
+   "family": "指定緊急避難場所",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 2,
+   "listingPages": 1
+  },
+  "skhb02": {
+   "tier": "core",
+   "family": "指定緊急避難場所",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "skhb03": {
+   "tier": "core",
+   "family": "指定緊急避難場所",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "skhb04": {
+   "tier": "core",
+   "family": "指定緊急避難場所",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 2,
+   "listingPages": 1
+  },
+  "skhb05": {
+   "tier": "core",
+   "family": "指定緊急避難場所",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "skhb06": {
+   "tier": "core",
+   "family": "指定緊急避難場所",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "skhb07": {
+   "tier": "core",
+   "family": "指定緊急避難場所",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "skhb08": {
+   "tier": "core",
+   "family": "指定緊急避難場所",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "disaster_lore_all": {
+   "tier": "core",
+   "family": "自然災害伝承碑",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 3,
+   "listingPages": 1
+  },
+  "disaster_lore_0": {
+   "tier": "core",
+   "family": "自然災害伝承碑",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "disaster_lore_1": {
+   "tier": "core",
+   "family": "自然災害伝承碑",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "disaster_lore_2": {
+   "tier": "core",
+   "family": "自然災害伝承碑",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "disaster_lore_3": {
+   "tier": "core",
+   "family": "自然災害伝承碑",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "disaster_lore_4": {
+   "tier": "core",
+   "family": "自然災害伝承碑",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "disaster_lore_5": {
+   "tier": "core",
+   "family": "自然災害伝承碑",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "disaster_lore_6": {
+   "tier": "core",
+   "family": "自然災害伝承碑",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "shinsaidenshoushisetsu": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "fukkokizu": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 2
+  },
+  "geography_flood": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "history": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "river": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "volcano": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "literary": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "geo": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "map-symbol": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "movie-earthquake": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "movie-flood": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "movie-volcano": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "landform1_mono": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 1
+  },
+  "landform2_mono": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "DisasterHist_flood_chugoku5": {
+   "tier": "periphery",
+   "family": "土地履歴(災害履歴図)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "kokuarea": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "kokuarea_kanseikentou": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "kokuarea_tokubetsukanseiku": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "kokuarea_shinnyuukanseiku": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "kokuarea_minkankunren": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 1
+  },
+  "ort_USA10": {
+   "tier": "core",
+   "family": "年代別の写真",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "swale": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "hillshademap": {
+   "tier": "core",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 8,
+   "listingPages": 0
+  },
+  "relief_free": {
+   "tier": "core",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 5,
+   "listingPages": 0
+  },
+  "20160414kumamoto_jiware": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "20160414kumamoto_ort_all": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "20140828dol": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 2,
+   "listingPages": 0
+  },
+  "20150911dol1": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 2,
+   "listingPages": 0
+  },
+  "1509typhoon18_shinsui_joso_150911_2": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 2,
+   "listingPages": 0
+  },
+  "20140929dol": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 2,
+   "listingPages": 0
+  },
+  "ort_riku10": {
+   "tier": "core",
+   "family": "年代別の写真",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "did2015": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "20240923rain_wajima_0924suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240923rain_wajima_0923suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240923rain_wajima_0924naname": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240923rain_wajima_0923naname": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240923rain_wajimatobu_0924do_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240923rain_wajimaseibu_0924do_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240923rain_wajima_0923do_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240923rain_syamenhoukai_dosekiryu_taiseki": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260924typhoon25_kitainbanuma_1001dansaizu": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260924typhoon25_kitainbanuma_0925dansaizu": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260924typhoon25_kitainbanuma_0924dansaizu": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260924typhoon25_kitainbanuma_0922dansaizu": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260902rain_himi_0901suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260902rain_himi_0901suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260902rain_himi_0901do_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260902rain_syamenhoukai_dosekiryu_taiseki_himi": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_yatsushiro_0729suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamotokeno_0812suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_yatsushiro_0729suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto1_0729suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto1_0803suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto2_0729suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto2_0802suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto3_0729suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto3_0730suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto3_0731suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto3_0801suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto4_0730suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamotokeno_0812suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_yatsushiro_0729naname": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto4_0729naname": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_yatsushiro_0729do_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamotokeno_0812do_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_yatsushiro_0729do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto1_0803do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto2_0729_0802do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto3_0731_0801do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_kumamoto4_0730do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_syamenhoukai_dosekiryu_taiseki_yatsushiro": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_syamenhoukai_taiseki_kumamoto3": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_syamenhouka_taiseki_kumamoto1": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_syamenhoukai_taiseki_kumamoto2": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_syamenhoukai_taiseki_kumamoto4": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20260729kumamoto_syamenhoukai_taiseki_kumamotokeno": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20250815rain_amakusa_0815suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20250815rain_yatushironishi_0816suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20250815rain_yatushirohigashi_0816suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20250815rain_amakusa_0815do_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20250815rain_yatsushironishi_0816do_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20250815rain_yatsushirohigashi_0816do_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20250815rain_syamenhoukai_dosekiryu_taiseki_amakusa": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20250815rain_syamenhoukai_dosekiryu_taiseki_yatushironishi": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20250815rain_syamenhoukai_dosekiryu_taiseki_yatsushirohigashi": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240809hyuganada_nichinan_0809suichoku_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240809hyuganada_nichinan_0809do_sokuho": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240726rain_mogamigawa_0726dansaizu": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240419bungosuido_sukumo_0418suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240419bungosuido_ainan_0418suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240419bungosuido_sukumo_0418do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240419bungosuido_ainan_0418do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_0405_0426do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimahigashi_0102do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 8,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimanaka_0111do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 4,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_suzu_0102do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 7,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102_noto_suzu_0105do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 4,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_nanao_0117do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_anamizu_0117do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimanishi_0117do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_suzu_0114do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimahigashi_0114do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_anamizu_0114do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimanishi_0111do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 3,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_anamizu_0111do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102_noto_nanao_0105do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102_noto_wazimanaka_0105do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102_noto_anamizu_0105do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimanaka_0102do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 4,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimanishii_0117suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_anamizu_0117suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_nanao_0117suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimahigashi_0114suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_anamizu_0114suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_suzu_0114suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimanaka_0111suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_anamizu_0111suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimanishii_0111suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_nanao_0105suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_suzu_0105suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimanaka_0105suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimanishii_0105suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_anamizu_0105suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_suzu_0102suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimahigashi_0102suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_wazimanaka_0102suichoku": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "gazo4": {
+   "tier": "core",
+   "family": "年代別の写真",
+   "productPages": 1,
+   "productLinks": 2,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240106noto_suzu_wazimahigashi_0103shinsuii": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240106noto_anamizu_0110shinsuii": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240109noto_nanao_0110shinsuii": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240112noto_wazimanishi_0112shinsuii": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240112noto_wazimanishi_houkaichi": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240106noto_anamizu_houkaichi": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240115noto_wazimanaka_houkaichi": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240109noto_nanao_houkaichi": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240106noto_suzu_wazimahigashi_houkaichi": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_hokai_bunzu": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "20240102noto_population": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "earthhillshade": {
+   "tier": "periphery",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "red": {
+   "tier": "periphery",
+   "productPages": 1,
+   "productLinks": 1,
+   "explPages": 0,
+   "listingPages": 0
+  },
+  "relief": {
+   "tier": "core",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 3,
+   "listingPages": 0
+  },
+  "active_volcanoes": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "1509typhoon18_nanamel_joso_150916_1": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "20191012typhoon19_kujigawa_1017do": {
+   "tier": "core",
+   "family": "災害対応(日付つきの個別ID)",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "slopemap": {
+   "tier": "periphery",
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 1,
+   "listingPages": 0
+  },
+  "std": {
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 0,
+   "tier": "core"
+  },
+  "pale": {
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 0,
+   "tier": "core"
+  },
+  "blank": {
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 0,
+   "tier": "core"
+  },
+  "english": {
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 0,
+   "tier": "core"
+  },
+  "ort": {
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 0,
+   "tier": "core"
+  },
+  "seamlessphoto": {
+   "productPages": 0,
+   "productLinks": 0,
+   "explPages": 0,
+   "listingPages": 0,
+   "tier": "core"
+  }
+ }
+}

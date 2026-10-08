@@ -1,0 +1,169 @@
+# chigent 索引 S15 — 災害伝承・避難場所等、年代別の写真、正射画像、令和8年(2026年)8月27日からの大雨、令和8年(2026年)台風第25号、令和8年(2026年)熊本地震
+# ID | タイトル | z=ズーム範囲 c=公開位置の中心(緯度,経度,ズーム) b=範囲(西,南,東,北) v=ベクトルタイル g=グループ
+## 災害伝承・避難場所等
+shinsaidenshoushisetsu | 震災伝承施設（東北地整） | c38.7091,141.3556,8 v
+## 災害伝承・避難場所等 > 四国の防災風土資源マップ（四国防災共同教育センター提供）
+sikoku_dosya | 土砂災害 | v
+sikoku_jishin-tsunami | 地震・津波 | v
+sikoku_kassui | 渇水 | v
+sikoku_suigai | 水害 | v
+## 災害伝承・避難場所等 > 大分県災害データアーカイブ（大分大学減災・復興デザイン教育研究センター（CERD）提供）
+oita_blizzard | 雪氷災害 | v
+oita_drought | 日照りの害 | v
+oita_etc | その他 | v
+oita_fire | 火災 | v
+oita_monument | 災害伝承碑 | v
+oita_quake | 地震災害 | v
+oita_slope | 土砂災害 | v
+oita_volcano | 火山災害 | v
+oita_wind_rain | 風水害 | v
+## 災害伝承・避難場所等 > 指定緊急避難場所・指定避難所
+sfh | 指定福祉避難所 | v
+sih | 指定一般避難所 | v
+skhb01 | 指定緊急避難場所（洪水） | v
+skhb02 | 指定緊急避難場所（崖崩れ、土石流及び地滑り） | v
+skhb03 | 指定緊急避難場所（高潮） | v
+skhb04 | 指定緊急避難場所（地震） | v
+skhb05 | 指定緊急避難場所（津波） | v
+skhb06 | 指定緊急避難場所（大規模な火事） | v
+skhb07 | 指定緊急避難場所（内水氾濫） | v
+skhb08 | 指定緊急避難場所（火山現象） | v
+## 災害伝承・避難場所等 > 自然災害伝承碑
+disaster_lore_0 | 自然災害伝承碑（洪水） | v
+disaster_lore_1 | 自然災害伝承碑（土砂災害） | v
+disaster_lore_2 | 自然災害伝承碑（高潮） | v
+disaster_lore_3 | 自然災害伝承碑（地震） | v
+disaster_lore_4 | 自然災害伝承碑（津波） | v
+disaster_lore_5 | 自然災害伝承碑（火山災害） | v
+disaster_lore_6 | 自然災害伝承碑（その他） | v
+disaster_lore_all | 自然災害伝承碑（すべて） | v
+## 災害伝承・避難場所等 > 震災伝承施設（東北地整）
+fukkokizu | 災害復興計画基図 | z5-18
+## 年代別の写真
+airphoto | 簡易空中写真（2004年～） | z5-18
+gazo1 | 1974年～1978年 | z10-18
+gazo2 | 1979年～1983年 | z10-18
+gazo3 | 1984年～1986年 | z10-18
+gazo4 | 1987年～1990年 | z10-18
+gsi-compare-photo | 時系列表示（ZL14以上で表示） | v
+lndst | 全国ランドサットモザイク画像 | z2-15
+modis | 世界衛星モザイク画像 | z2-10
+ort | 電子国土基本図（オルソ画像）（2007年～） | z14-18
+ort_1928 | 1928年頃 | z2-18 c34.6852,135.5026,11
+ort_USA10 | 1945年～1950年 | z2-18
+ort_old10 | 1961年～1969年 | z2-18
+ort_riku10 | 1936年～1942年頃 | z2-18 c35.039,137.6587,7
+ort_spec | ┗撮影期間 | v
+pp | 単写真 | v
+rinya | 森林（国有林）の空中写真（林野庁） | z2-18
+rinya_m | 森林（民有林）の空中写真 | z2-18
+seamlessphoto | 全国最新写真（シームレス） | z2-18
+seamlessphoto_spec | ┗撮影期間 | v
+## 年代別の写真 > 年度別写真（2007年以降）
+nendophoto2007 | 2007年 | z14-18
+nendophoto2007_spec | 2007年 | v
+nendophoto2008 | 2008年 | z14-18
+nendophoto2008_spec | 2008年 | v
+nendophoto2009 | 2009年 | z14-18
+nendophoto2009_spec | 2009年 | v
+nendophoto2010 | 2010年 | z14-18
+nendophoto2010_spec | 2010年 | v
+nendophoto2011 | 2011年 | z14-18
+nendophoto2011_spec | 2011年 | v
+nendophoto2012 | 2012年 | z14-18
+nendophoto2012_spec | 2012年 | v
+nendophoto2013 | 2013年 | z14-18
+nendophoto2013_spec | 2013年 | v
+nendophoto2014 | 2014年 | z14-18
+nendophoto2014_spec | 2014年 | v
+nendophoto2015 | 2015年 | z14-18
+nendophoto2015_spec | 2015年 | v
+nendophoto2016 | 2016年 | z14-18
+nendophoto2016_spec | 2016年 | v
+nendophoto2017 | 2017年 | z14-18
+nendophoto2017_spec | 2017年 | v
+nendophoto2018 | 2018年 | z14-18
+nendophoto2018_spec | 2018年 | v
+nendophoto2019 | 2019年 | z14-18
+nendophoto2019_spec | 2019年 | v
+nendophoto2020 | 2020年 | z14-18
+nendophoto2020_spec | 2020年 | v
+nendophoto2021 | 2021年 | z14-18
+nendophoto2021_spec | 2021年 | v
+nendophoto2022 | 2022年 | z14-18
+nendophoto2022_spec | 2022年 | v
+nendophoto2023 | 2023年 | z14-18
+nendophoto2023_spec | 2023年 | v
+nendophoto2024 | 2024年 | z14-18
+nendophoto2024_spec | 2024年 | v
+nendophoto2025 | 2025年 | z14-18
+nendophoto2025_spec | 2025年 | v
+nendophoto2026 | 2026年 | z14-18
+nendophoto2026_spec | 2026年 | v
+## 年代別の写真 > 東日本大震災後正射画像
+toho1 | 2011年3月～2011年4月 | z5-18
+toho2 | 2011年5月～2012年4月 | z5-18
+toho3 | 2012年10月～2013年5月 | z5-18
+toho4 | 2013年9月～2013年12月 | z5-18
+## 正射画像
+20170705typhoon3_dol_all | 統合版 | g
+201807H3007gouu_ort | 統合版 | g
+## 令和8年(2026年)8月27日からの大雨 > 垂直写真 > 氷見地区
+20260902rain_himi_0901suichoku | 氷見地区（9/1撮影） | c36.8487,136.959,12 v
+## 令和8年(2026年)8月27日からの大雨 > 垂直写真（速報） > 氷見地区
+20260902rain_himi_0901suichoku_sokuho | 氷見地区（9/1撮影） | c36.8487,136.959,12 v
+## 令和8年(2026年)8月27日からの大雨 > 斜面崩壊・土石流・堆積分布図データ
+20260902rain_syamenhoukai_dosekiryu_taiseki_himi | 斜面崩壊・土石流・堆積分布図データ（氷見地区） | v
+## 令和8年(2026年)8月27日からの大雨 > 正射画像（速報） > 氷見地区
+20260902rain_himi_0901do_sokuho | 氷見地区（9/1撮影） | z10-18 c36.8475,136.9593,12
+## 令和8年(2026年)台風第25号 > 浸水推定図
+20260924typhoon25_kitainbanuma_0922dansaizu | 北印旛沼(令和8年9月22日14時時点) | z5-16 c35.8059,140.2665,14
+20260924typhoon25_kitainbanuma_0924dansaizu | 北印旛沼(令和8年9月24日14時時点) | z5-16 c35.8059,140.2665,14
+20260924typhoon25_kitainbanuma_0925dansaizu | 北印旛沼(令和8年9月25日11時時点) | z5-16 c35.8059,140.2665,14
+20260924typhoon25_kitainbanuma_1001dansaizu | 北印旛沼(令和8年10月1日16時時点) | z5-16 c35.8059,140.2665,14
+## 令和8年(2026年)熊本地震 > 垂直写真 > 八代地区
+20260729kumamoto_yatsushiro_0729suichoku | 八代地区（7/29撮影） | c32.4455,130.5842,12 v
+## 令和8年(2026年)熊本地震 > 垂直写真 > 熊本県央地区
+20260729kumamoto_kumamotokeno_0812suichoku | 熊本県央地区（8/12撮影） | c32.6272,130.8891,12 v
+## 令和8年(2026年)熊本地震 > 垂直写真 > 熊本１地区
+20260729kumamoto_kumamoto1_0729suichoku_sokuho | 熊本１地区（7/29撮影） | c32.8405,130.7552,12 v
+20260729kumamoto_kumamoto1_0803suichoku | 熊本１地区（8/3撮影） | c32.8404,130.7552,12 v
+## 令和8年(2026年)熊本地震 > 垂直写真 > 熊本２地区
+20260729kumamoto_kumamoto2_0729suichoku_sokuho | 熊本２地区（7/29撮影） | c32.7541,130.7328,12 v
+20260729kumamoto_kumamoto2_0802suichoku_sokuho | 熊本２地区（8/2撮影） | c32.7535,130.7339,12 v
+## 令和8年(2026年)熊本地震 > 垂直写真 > 熊本３地区
+20260729kumamoto_kumamoto3_0729suichoku_sokuho | 熊本３地区（7/29撮影） | c32.7135,130.7064,12 v
+20260729kumamoto_kumamoto3_0730suichoku_sokuho | 熊本３地区（7/30撮影） | c32.6826,130.6813,12 v
+20260729kumamoto_kumamoto3_0731suichoku_sokuho | 熊本３地区（7/31撮影） | c32.6824,130.6813,12 v
+20260729kumamoto_kumamoto3_0801suichoku | 熊本３地区（8/1撮影） | c32.6824,130.6813,12 v
+## 令和8年(2026年)熊本地震 > 垂直写真 > 熊本４地区
+20260729kumamoto_kumamoto4_0730suichoku_sokuho | 熊本４地区（7/30撮影） | c32.6045,130.6582,12 v
+## 令和8年(2026年)熊本地震 > 垂直写真（速報） > 八代地区
+20260729kumamoto_yatsushiro_0729suichoku_sokuho | 八代地区（7/29撮影） | c32.4453,130.5842,12 v
+## 令和8年(2026年)熊本地震 > 垂直写真（速報） > 熊本県央地区
+20260729kumamoto_kumamotokeno_0812suichoku_sokuho | 熊本県央地区（8/12撮影） | c32.6272,130.8891,12 v
+## 令和8年(2026年)熊本地震 > 斜め写真 > 八代地区
+20260729kumamoto_yatsushiro_0729naname | 八代地区（7/29撮影） | c32.4453,130.5842,12 v
+## 令和8年(2026年)熊本地震 > 斜め写真 > 熊本４地区
+20260729kumamoto_kumamoto4_0729naname | 熊本４地区（7/29撮影） | c32.5937,130.6322,12 v
+## 令和8年(2026年)熊本地震 > 斜面崩壊・堆積分布データ
+20260729kumamoto_syamenhouka_taiseki_kumamoto1 | 斜面崩壊・堆積分布データ（熊本１地区） | v
+20260729kumamoto_syamenhoukai_dosekiryu_taiseki_yatsushiro | 斜面崩壊・堆積分布データ（八代地区） | v
+20260729kumamoto_syamenhoukai_taiseki_kumamoto2 | 斜面崩壊・堆積分布データ（熊本２地区） | v
+20260729kumamoto_syamenhoukai_taiseki_kumamoto3 | 斜面崩壊・堆積分布データ（熊本３地区） | v
+20260729kumamoto_syamenhoukai_taiseki_kumamoto4 | 斜面崩壊・堆積分布データ（熊本４地区） | v
+20260729kumamoto_syamenhoukai_taiseki_kumamotokeno | 斜面崩壊・堆積分布データ（熊本県央地区） | v
+## 令和8年(2026年)熊本地震 > 正射画像 > 八代地区
+20260729kumamoto_yatsushiro_0729do | 八代地区（7/29撮影） | z10-18 c32.4453,130.5842,12
+## 令和8年(2026年)熊本地震 > 正射画像 > 熊本１地区
+20260729kumamoto_kumamoto1_0803do | 熊本１地区（8/3撮影） | z10-18 c32.8405,130.7552,12
+## 令和8年(2026年)熊本地震 > 正射画像 > 熊本２地区
+20260729kumamoto_kumamoto2_0729_0802do | 熊本２地区（7/29、8/2撮影） | z10-18 c32.7541,130.7328,12
+## 令和8年(2026年)熊本地震 > 正射画像 > 熊本３地区
+20260729kumamoto_kumamoto3_0731_0801do | 熊本３地区（7/31、8/1撮影） | z10-18 c32.6876,130.7023,12
+## 令和8年(2026年)熊本地震 > 正射画像 > 熊本４地区
+20260729kumamoto_kumamoto4_0730do | 熊本４地区（7/30撮影） | z10-18 c32.6045,130.6582,12
+## 令和8年(2026年)熊本地震 > 正射画像（速報） > 八代地区
+20260729kumamoto_yatsushiro_0729do_sokuho | 八代地区（7/29撮影） | z10-18 c32.4453,130.5842,12
+## 令和8年(2026年)熊本地震 > 正射画像（速報） > 熊本県央地区
+20260729kumamoto_kumamotokeno_0812do_sokuho | 熊本県央地区（8/12撮影） | z10-18 c32.6272,130.8891,12

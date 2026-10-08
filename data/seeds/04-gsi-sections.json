@@ -1,0 +1,6 @@
+[
+ { "url": "https://www.gsi.go.jp/bousaichiri/bousaichiri.html", "sourceType": "product", "note": "防災・地理(主題図)の入口", "follow": "gsi\\.go\\.jp/bousaichiri/[^/]+\\.html$", "maxFollow": 80 },
+ { "url": "https://www.gsi.go.jp/kankyochiri/index.html", "sourceType": "product", "note": "環境地理(デジタル標高地形図など)", "follow": "gsi\\.go\\.jp/kankyochiri/[^/]+\\.html$", "maxFollow": 40 },
+ { "url": "https://www.gsi.go.jp/chirikukan/index.html", "sourceType": "product", "note": "地理空間情報", "follow": "gsi\\.go\\.jp/chirikukan/[^/]+\\.html$", "maxFollow": 15 },
+ { "url": "https://www.gsi.go.jp/CHIRIKYOUIKU/shien.html", "sourceType": "explanatory", "note": "地理教育支援", "follow": "gsi\\.go\\.jp/CHIRIKYOUIKU/[^/]+\\.html$", "maxFollow": 30 }
+]

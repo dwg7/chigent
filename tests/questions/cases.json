@@ -1,0 +1,539 @@
+[
+ {
+  "id": "hakone-volcano",
+  "question": "箱根山の火山地形を見たい",
+  "basis": "製品型: 火山土地条件図のページの「箱根山」リンク(ズーム14、std+vlcd_hakone)",
+  "expect": {
+   "center": {
+    "lat": 35.233,
+    "lon": 139.021,
+    "withinKm": 15
+   },
+   "zoom": [
+    11,
+    16
+   ],
+   "layersAny": [
+    [
+     "vlcd_hakone",
+     "vlcd"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "zao-volcano",
+  "question": "蔵王山の火山の成り立ちを詳しく知りたい",
+  "basis": "製品型: 火山土地条件図「蔵王山」(vlcd_zao)と火山基本図(vbmd_bm)",
+  "expect": {
+   "center": {
+    "lat": 38.14,
+    "lon": 140.45,
+    "withinKm": 20
+   },
+   "zoom": [
+    10,
+    16
+   ],
+   "layersAny": [
+    [
+     "vlcd_zao",
+     "vbmd_bm"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "koto-flood",
+  "question": "江東区の洪水の浸水想定は？",
+  "basis": "判断: 重ねるハザードマップの洪水浸水想定区域(事例には出ない。災害時に重要なため核に入れた)",
+  "expect": {
+   "center": {
+    "lat": 35.673,
+    "lon": 139.817,
+    "withinKm": 8
+   },
+   "zoom": [
+    11,
+    15
+   ],
+   "layersAny": [
+    [
+     "01_flood_l2_shinsuishin_data",
+     "01_flood_l1_shinsuishin_newlegend_data"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "osaka-tsunami",
+  "question": "大阪市に津波が来たらどこまで浸水する？",
+  "basis": "判断: 津波浸水想定(想定最大規模)",
+  "expect": {
+   "center": {
+    "lat": 34.69,
+    "lon": 135.5,
+    "withinKm": 15
+   },
+   "zoom": [
+    10,
+    15
+   ],
+   "layersAll": [
+    "04_tsunami_newlegend_data"
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "niigata-river-landform",
+  "question": "新潟市の川の氾濫の履歴が分かる地形の地図は？",
+  "basis": "製品型: 治水地形分類図(lcmfc2)はz8〜11で6ページ",
+  "expect": {
+   "center": {
+    "lat": 37.916,
+    "lon": 139.036,
+    "withinKm": 20
+   },
+   "zoom": [
+    8,
+    14
+   ],
+   "layersAll": [
+    "lcmfc2"
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "kumamoto-fault",
+  "question": "熊本市周辺の活断層を知りたい",
+  "basis": "製品型: 活断層図(afm)の整備一覧。都市圏はz14",
+  "expect": {
+   "center": {
+    "lat": 32.8,
+    "lon": 130.74,
+    "withinKm": 40
+   },
+   "zoom": [
+    10,
+    16
+   ],
+   "layersAll": [
+    "afm"
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "tokyo-1945",
+  "question": "東京駅の終戦直後の様子を見たい",
+  "basis": "判断: 年代別の写真(ort_USA10 1945〜50年)。ズーム14以上",
+  "expect": {
+   "center": {
+    "lat": 35.681,
+    "lon": 139.767,
+    "withinKm": 5
+   },
+   "zoom": [
+    14,
+    18
+   ],
+   "layersAny": [
+    [
+     "ort_USA10",
+     "ort_riku10"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "fukuoka-relief",
+  "question": "福岡市の高低差が分かる地図",
+  "basis": "解説型: 色別標高図・陰影起伏図(解説ページに5〜8ページ)",
+  "expect": {
+   "center": {
+    "lat": 33.59,
+    "lon": 130.4,
+    "withinKm": 15
+   },
+   "zoom": [
+    10,
+    15
+   ],
+   "layersAny": [
+    [
+     "relief",
+     "hillshademap",
+     "slopemap"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "ishinomaki-lore",
+  "question": "石巻市の自然災害伝承碑を見たい",
+  "basis": "製品型: 自然災害伝承碑(disaster_lore_all)",
+  "expect": {
+   "center": {
+    "lat": 38.43,
+    "lon": 141.3,
+    "withinKm": 15
+   },
+   "zoom": [
+    9,
+    16
+   ],
+   "layersAll": [
+    "disaster_lore_all"
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "kesennuma-shelter-tsunami",
+  "question": "気仙沼市の津波の指定緊急避難場所",
+  "basis": "解説型: 指定緊急避難場所(skhb05)",
+  "expect": {
+   "center": {
+    "lat": 38.91,
+    "lon": 141.57,
+    "withinKm": 15
+   },
+   "zoom": [
+    11,
+    16
+   ],
+   "layersAll": [
+    "skhb05"
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "japan-relief",
+  "question": "日本全体の標高を色で見たい",
+  "basis": "解説型: 色別標高図",
+  "expect": {
+   "center": {
+    "lat": 36,
+    "lon": 138,
+    "withinKm": 700
+   },
+   "zoom": [
+    3,
+    7
+   ],
+   "layersAll": [
+    "relief"
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "ise-bay-coast",
+  "question": "伊勢湾の沿岸の土地条件を知りたい",
+  "basis": "製品型: 沿岸海域土地条件図(ccm1/ccm2、ズーム6)",
+  "expect": {
+   "center": {
+    "lat": 34.8,
+    "lon": 136.7,
+    "withinKm": 80
+   },
+   "zoom": [
+    6,
+    12
+   ],
+   "layersAny": [
+    [
+     "ccm1",
+     "ccm2"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "no-route",
+  "question": "東京から大阪までの電車の経路を教えて",
+  "basis": "判断: 地理院地図のURLでは表せない(ルート検索)",
+  "expect": {
+   "noUrl": true
+  }
+ },
+ {
+  "id": "joso-flood",
+  "question": "2015年9月の関東・東北豪雨で、常総市はどのくらい浸水した？",
+  "basis": "製品型(災害対応): 常総地区の推定浸水範囲と正射画像(日付つき ID。catalog で探す必要がある)",
+  "expect": {
+   "center": {
+    "lat": 36.03,
+    "lon": 139.99,
+    "withinKm": 15
+   },
+   "zoom": [
+    10,
+    16
+   ],
+   "layersAny": [
+    [
+     "1509typhoon18_shinsui_joso_150911_2",
+     "1509typhoon18_shinsui_joso_150911_3a",
+     "1509typhoon18_shinsui_joso_150911_4",
+     "1509typhoon18_shinsui_joso_150912",
+     "1509typhoon18_shinsui_joso_150913",
+     "1509typhoon18_shinsui_joso_150914",
+     "1509typhoon18_shinsui_joso_150915",
+     "1509typhoon18_shinsui_joso_150916",
+     "20150911dol1",
+     "20150911dol2"
+    ]
+   ],
+   "maxOverlays": 2
+  }
+ },
+ {
+  "id": "noto-wajima",
+  "question": "能登半島地震の直後の輪島市の様子が分かる写真は？",
+  "basis": "製品型(災害対応): 2024年能登半島地震の輪島地区の正射画像(日付つき ID)",
+  "expect": {
+   "center": {
+    "lat": 37.39,
+    "lon": 136.9,
+    "withinKm": 15
+   },
+   "zoom": [
+    10,
+    17
+   ],
+   "layersAny": [
+    [
+     "20240102noto_wazimahigashi_0102do",
+     "20240102noto_wazimanaka_0102do",
+     "20240102_noto_wazimanaka_0105do",
+     "20240102noto_wazimahigashi_0114do",
+     "20240102noto_wazimanaka_0111do",
+     "20240102noto_wazimanishi_0111do",
+     "20240102noto_wazimanishi_0117do"
+    ]
+   ],
+   "maxOverlays": 2
+  }
+ },
+ {
+  "id": "fuji-volcano",
+  "question": "富士山の溶岩流など火山の地形を地図で見たい",
+  "basis": "製品型: 火山土地条件図(vlcd_fuji)",
+  "expect": {
+   "center": {
+    "lat": 35.36,
+    "lon": 138.73,
+    "withinKm": 25
+   },
+   "zoom": [
+    9,
+    16
+   ],
+   "layersAny": [
+    [
+     "vlcd_fuji",
+     "vbmd_bm"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "tokyo-1960s",
+  "question": "東京タワー周辺の昭和40年ごろの様子を見たい",
+  "basis": "判断: 年代別の写真(ort_old10 1961〜69年)",
+  "expect": {
+   "center": {
+    "lat": 35.6586,
+    "lon": 139.7454,
+    "withinKm": 4
+   },
+   "zoom": [
+    14,
+    18
+   ],
+   "layersAll": [
+    "ort_old10"
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "sakurajima-volcano",
+  "question": "桜島の火山地形を知りたい",
+  "basis": "製品型: 火山土地条件図(vlcd_sakura)。略称が自明でない例",
+  "expect": {
+   "center": {
+    "lat": 31.58,
+    "lon": 130.66,
+    "withinKm": 15
+   },
+   "zoom": [
+    10,
+    16
+   ],
+   "layersAny": [
+    [
+     "vlcd_sakura",
+     "vbmd_bm"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "nagoya-storm-surge",
+  "question": "名古屋市港区の高潮による浸水想定は？",
+  "basis": "判断: 高潮の浸水想定は地理院地図(catalog)に無い。ないと言い、津波や洪水で代用しない。URLを返す場合は skhb03(高潮の避難場所)だけを許す",
+  "expect": {
+   "center": {
+    "lat": 35.108,
+    "lon": 136.885,
+    "withinKm": 10
+   },
+   "zoom": [
+    11,
+    16
+   ],
+   "layersAny": [
+    [
+     "skhb03"
+    ]
+   ],
+   "maxOverlays": 1,
+   "layersForbid": [
+    "04_tsunami_newlegend_data",
+    "01_flood_l2_shinsuishin_data",
+    "01_flood_l1_shinsuishin_newlegend_data"
+   ],
+   "orNoUrl": true
+  }
+ },
+ {
+  "id": "mashiki-2016",
+  "question": "平成28年の熊本地震の直後の益城町の様子が分かる写真は？",
+  "basis": "製品型(災害対応): 平成28年熊本地震の益城地区の正射画像(日付つき ID。索引で探す)",
+  "expect": {
+   "center": {
+    "lat": 32.79,
+    "lon": 130.82,
+    "withinKm": 10
+   },
+   "zoom": [
+    10,
+    17
+   ],
+   "layersAny": [
+    [
+     "20160414kumamoto_0415dol1",
+     "20160414kumamoto_0530dol",
+     "20160414kumamoto_ort_all"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "suzu-tsunami",
+  "question": "能登半島地震で、珠洲市はどのくらい津波で浸水した？",
+  "basis": "製品型(災害対応): 津波浸水域データ(珠洲地区)。GeoJSON でカタログに無く、索引にだけある",
+  "expect": {
+   "center": {
+    "lat": 37.44,
+    "lon": 137.26,
+    "withinKm": 15
+   },
+   "zoom": [
+    9,
+    16
+   ],
+   "layersAny": [
+    [
+     "20240106noto_suzu_wazimahigashi_0109rev",
+     "20240106noto_suzu_wazimahigashi_0103shinsuii"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "isewan-typhoon",
+  "question": "伊勢湾台風のときの名古屋周辺の浸水範囲は？",
+  "basis": "判断: 土地履歴調査の災害履歴図(水害)。1959年9月の伊勢湾台風(更新_2024)",
+  "expect": {
+   "center": {
+    "lat": 35.05,
+    "lon": 136.85,
+    "withinKm": 40
+   },
+   "zoom": [
+    7,
+    16
+   ],
+   "layersAny": [
+    [
+     "1959_09_s34_t_add24"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "kiso-relief",
+  "question": "長野県木曽町の高低差が分かる地図",
+  "basis": "座標の検証: 木曽町(35.84,137.69)。msearch の「木曽町役場」で南木曽町(約28km南)を取り違えないこと",
+  "expect": {
+   "center": {
+    "lat": 35.8436,
+    "lon": 137.6933,
+    "withinKm": 10
+   },
+   "zoom": [
+    10,
+    15
+   ],
+   "layersAny": [
+    [
+     "relief",
+     "hillshademap",
+     "slopemap"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "nishikawa-relief",
+  "question": "山形県西川町の高低差が分かる地図",
+  "basis": "座標の検証: 西川町役場(38.4265,140.1474)。知識だけでは約11km外れた小さな町",
+  "expect": {
+   "center": {
+    "lat": 38.4265,
+    "lon": 140.1474,
+    "withinKm": 7
+   },
+   "zoom": [
+    10,
+    15
+   ],
+   "layersAny": [
+    [
+     "relief",
+     "hillshademap",
+     "slopemap"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ }
+]

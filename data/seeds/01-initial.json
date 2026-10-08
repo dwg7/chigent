@@ -1,0 +1,101 @@
+[
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/volcano-maps-vlcm.html",
+  "sourceType": "product",
+  "note": "火山土地条件図の一覧。火山名が「地理院地図で見る」リンク"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/volcano-maps-vbm.html",
+  "sourceType": "product",
+  "note": "火山基本図の一覧"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/volcano-maps.html",
+  "sourceType": "product"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/volcano-terrain-classification-release.html",
+  "sourceType": "product"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/volcano-maps-information-hakone.html",
+  "sourceType": "product"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/bousaichiri61045.html",
+  "sourceType": "product",
+  "note": "火山土地条件図「蔵王山」"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/inspection.html",
+  "sourceType": "product",
+  "note": "活断層図(都市圏活断層図)整備一覧"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/active_fault.html",
+  "sourceType": "product"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/lcmfclist.html",
+  "sourceType": "product",
+  "note": "治水地形分類図(初期整備版)図名一覧"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/fc_index.html",
+  "sourceType": "product"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/lfc_index.html",
+  "sourceType": "product",
+  "note": "ベクトルタイル「地形分類」"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/bousaichiri41050.html",
+  "sourceType": "product"
+ },
+ {
+  "url": "https://maps.gsi.go.jp/help/intro/looklist/",
+  "sourceType": "listing",
+  "note": "地理院地図で見ることのできる地図や写真一覧(レイヤーが存在する根拠のみ)",
+  "follow": "help/intro/looklist/[^/]+\\.html$"
+ },
+ {
+  "url": "https://maps.gsi.go.jp/help/intro/general/",
+  "sourceType": "explanatory",
+  "note": "地理院地図の使い方(一般向け)",
+  "follow": "help/intro/general/[^/]+\\.html$"
+ },
+ {
+  "url": "https://maps.gsi.go.jp/help/intro/kinolist/",
+  "sourceType": "explanatory",
+  "note": "機能一覧",
+  "follow": "help/intro/kinolist/[^/]+\\.html$"
+ },
+ {
+  "url": "https://maps.gsi.go.jp/help/intro/municipality/",
+  "sourceType": "explanatory",
+  "note": "自治体向け",
+  "follow": "help/intro/municipality/[^/]+\\.html$"
+ },
+ {
+  "url": "https://maps.gsi.go.jp/help/intro/school/",
+  "sourceType": "explanatory",
+  "note": "学校向け",
+  "follow": "help/intro/school/[^/]+\\.html$"
+ },
+ {
+  "url": "https://www.gsi.go.jp/CHIRIKYOUIKU/index.html",
+  "sourceType": "explanatory",
+  "note": "地理教育支援"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/denshouhi.html",
+  "sourceType": "product",
+  "note": "自然災害伝承碑"
+ },
+ {
+  "url": "https://www.gsi.go.jp/bousaichiri/hinanbasho.html",
+  "sourceType": "product",
+  "note": "指定緊急避難場所"
+ }
+]

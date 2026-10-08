@@ -1,0 +1,161 @@
+# chigent 索引 S04 — 土地の成り立ち・土地利用 > 土地分類基本調査（土地履歴調査）（国土交通省政策統括官） > 災害履歴図（高潮）；土地の成り立ち・土地利用 > {土地条件図、地形分類（ベクトルタイル提供実験）、宅地利用動向調査、日本の典型地形、沿岸海域土地条件図、活断層図、湖沼図・湖沼データ、火山土地条件図、火山基本図}
+# ID | タイトル | z=ズーム範囲 c=公開位置の中心(緯度,経度,ズーム) b=範囲(西,南,東,北) v=ベクトルタイル g=グループ
+## 土地の成り立ち・土地利用 > 土地分類基本調査（土地履歴調査）（国土交通省政策統括官） > 災害履歴図（高潮）
+DisasterHist_flood_chugoku5 | 中国地区（岡山） 平成16年 | z2-16
+DisasterHist_flood_chugoku6 | 中国地区（広島） 平成3年～平成16年 | z2-16
+DisasterHist_flood_shikoku5 | 四国地区（高松） 昭和25年～平成17年 | z2-16
+DisasterHist_flood_shikoku6 | 四国地区（高知） 昭和25年～昭和45年 | z2-16
+DisasterHist_flood_shikoku7 | 四国地区（松山） 昭和25年～平成3年 | z2-16
+DisasterHist_stormSurge_GifuAichiMie1 | 中部地区（豊橋） 昭和34年 | z2-16
+DisasterHist_stormSurge_GifuAichiMie2 | 中部地区（岡崎） 昭和28年～昭和34年 | z2-16
+DisasterHist_stormSurge_chugoku1 | 中国地区（倉敷） 平成16年 | z2-16
+DisasterHist_stormSurge_chugoku7 | 中国地区（呉） 平成3年～平成16年 | z2-16
+DisasterHist_stormSurge_chugoku8 | 中国地区（福山） 平成16年 | z2-16
+DisasterHist_stormSurge_kyushu1 | 九州地区（北九州） 平成11年 | z2-16
+DisasterHist_stormSurge_kyushu2 | 九州地区（熊本） 寛政4年～平成11年 | z2-16
+DisasterHist_stormSurge_kyushu3 | 九州地区（久留米・佐賀） 大正3年～昭和34年 ★新規2025 | z2-16
+DisasterHist_stormSurge_shikoku1 | 四国地区（徳島） 昭和25年～昭和36年 | z2-16
+## 土地の成り立ち・土地利用 > 土地条件図
+lcm25k | 初期整備版 | z0-16
+lcm25k_2012 | 数値地図25000（土地条件） | z4-16
+lcm25k_spec | 初期整備版 諸元情報 | v
+## 土地の成り立ち・土地利用 > 地形分類（ベクトルタイル提供実験）
+experimental_landformclassification1 | 地形分類（自然地形） | v
+experimental_landformclassification2 | 地形分類（人工地形） | v
+experimental_landformclassification3 | 諸元情報（自然地形『詳細版』） | v
+## 土地の成り立ち・土地利用 > 宅地利用動向調査 > 中部圏
+lum4bl_chubu1977 | 1977年 | z0-16
+lum4bl_chubu1982 | 1982年 | z0-16
+lum4bl_chubu1987 | 1987年 | z0-16
+lum4bl_chubu1991 | 1991年 | z0-16
+lum4bl_chubu1997 | 1997年 | z0-16
+lum4bl_chubu2003 | 2003年 | z0-16
+## 土地の成り立ち・土地利用 > 宅地利用動向調査 > 近畿圏
+lum4bl_kinki1974 | 1974年 | z0-16
+lum4bl_kinki1979 | 1979年 | z0-16
+lum4bl_kinki1985 | 1985年 | z0-16
+lum4bl_kinki1991 | 1991年 | z0-16
+lum4bl_kinki1996 | 1996年 | z0-16
+lum4bl_kinki2001 | 2001年 | z0-16
+lum4bl_kinki2008 | 2008年 | z0-16
+## 土地の成り立ち・土地利用 > 宅地利用動向調査 > 首都圏
+lum4bl_capital1974 | 1974年 | z0-16
+lum4bl_capital1979 | 1979年 | z0-16
+lum4bl_capital1984 | 1984年 | z0-16
+lum4bl_capital1989 | 1989年 | z0-16
+lum4bl_capital1994 | 1994年 | z0-16
+lum4bl_capital2000 | 2000年 | z0-16
+lum4bl_capital2005 | 2005年 | z0-16
+## 土地の成り立ち・土地利用 > 日本の典型地形
+tenkei_chikaku | 地殻の変動による地形 | v
+tenkei_chishitsu | 地質を反映した地形 | v
+tenkei_hyoga | 氷河・周氷河作用による地形 | v
+tenkei_kasen | 河川の作用による地形 | v
+tenkei_kazan | 火山の活動による地形 | v
+tenkei_sonota | その他の地形 | v
+tenkei_umi | 海の作用による地形 | v
+## 土地の成り立ち・土地利用 > 沿岸海域土地条件図
+ccm1 | 平成元年以降 | z0-16
+ccm2 | 昭和63年以前 | z0-16
+## 土地の成り立ち・土地利用 > 活断層図
+active_fault_jishinhonbu | 全国の主要活断層帯（地震調査研究推進本部） | v
+afm | 活断層図（都市圏活断層図） | z0-16
+afm_spec | 諸元情報 | v
+## 土地の成り立ち・土地利用 > 湖沼図・湖沼データ
+lake1 | 湖沼図 | z5-17
+lakedata | 湖沼データ | z5-18
+lakedata_spec | 諸元情報 | v
+## 土地の成り立ち・土地利用 > 火山土地条件図 > 火山土地条件図 数値データ（火山地形分類）
+vlcd_adatara | 安達太良山 | z10-16 c37.6283,140.2832,13
+vlcd_akitakoma | 秋田駒ヶ岳 | z10-16 c39.7472,140.7761,13
+vlcd_akitayake | 秋田焼山 | z10-16 c39.9628,140.7625,13
+vlcd_asamayama | 浅間山 | z10-16 c36.407,138.52,13
+vlcd_aso | 阿蘇山 | z10-16 c32.8831,131.0885,13
+vlcd_bandai | 磐梯山 | z10-16 c37.6072,140.0786,13
+vlcd_chokai | 鳥海山 | z10-16 c39.0992,140.0345,13
+vlcd_esn | 恵山 | z10-16 c41.8048,141.1664,13
+vlcd_fuji | 富士山 | z10-16 c35.3624,138.7312,13
+vlcd_hachijojima | 八丈島 | z10-16 c33.1,139.812,13
+vlcd_hakone | 箱根山 | z10-16 c35.2346,139.0221,13
+vlcd_hokoma | 北海道駒ヶ岳 | z10-16 c42.0658,140.6858,13
+vlcd_iwate | 岩手山 | z10-16 c39.8496,140.9977,13
+vlcd_izuo | 伊豆大島 | z10-16 c34.7291,139.3962,13
+vlcd_kiri | 霧島山 | z10-16 c31.911,130.8832,13
+vlcd_koz | 神津島 | z10-16 c34.216,139.1565,13
+vlcd_kuju | くじゅう連山 | z10-16 c33.0895,131.244,13
+vlcd_kurikoma | 栗駒山 | z10-16 c38.9609,140.7857,13
+vlcd_kusatsu | 草津白根山 | z10-16 c36.6371,138.5397,13
+vlcd_mdg | 弥陀ヶ原 | z10-16 c36.5557,137.5357,13
+vlcd_meakan | 雌阿寒岳・雄阿寒岳 | z10-16 c43.3847,144.0119,13
+vlcd_miyake | 三宅島 | z10-16 c34.0823,139.5265,13
+vlcd_niigatayake | 新潟焼山 | z10-16 c36.9185,138.0362,13
+vlcd_nks | 日光白根山 | z10-16 c36.7987,139.3759,13
+vlcd_ontake | 御嶽山 | z10-16 c35.8951,137.4853,13
+vlcd_sakura | 桜島 | z10-16 c31.5852,130.6571,13
+vlcd_satsumaio | 薩摩硫黄島 | z10-16 c30.7915,130.3032,13
+vlcd_satsumatake | 薩摩竹島 | z10-16 c30.8106,130.4264,13
+vlcd_suwanosejima | 諏訪之瀬島 | z10-16 c29.6399,129.7113,13
+vlcd_tarumae | 樽前山 | z10-16 c42.6893,141.376,13
+vlcd_tokachi | 十勝岳 | z10-16 c43.4242,142.6764,13
+vlcd_trg | 鶴見岳・伽藍岳 | z10-16 c33.2866,131.4305,13
+vlcd_unzen | 雲仙岳 | z10-16 c32.7578,130.3047,13
+vlcd_usu | 有珠山 | z10-16 c42.5406,140.8339,13
+vlcd_yakedake | 焼岳 | z10-16 c36.2289,137.5847,13
+vlcd_zao | 蔵王山 | z10-16 c38.1362,140.4495,13
+## 土地の成り立ち・土地利用 > 火山基本図
+vbmd_bm | 火山基本図データ（基図） | z5-18
+vbmd_colorrel | 火山基本図データ（陰影段彩図） | z5-18
+vbmd_pm | 火山基本図データ（写真地図） | z5-18
+vbmd_spec | 諸元情報 | v
+## 土地の成り立ち・土地利用 > 火山基本図 > 火山防災関連施設
+vdpf_adt | 安達太良山 | c37.6331,140.2831,11 v
+vdpf_aog | 青ヶ島 | c32.4583,139.7592,11 v
+vdpf_asm | 浅間山 | c36.4064,138.5231,11 v
+vdpf_aso | 阿蘇山 | c32.8844,131.1039,11 v
+vdpf_atk | 秋田駒ヶ岳 | c39.7611,140.7994,11 v
+vdpf_ats | アトサヌプリ | c43.6103,144.4386,11 v
+vdpf_aty | 秋田焼山 | c39.9639,140.7569,11 v
+vdpf_azm | 吾妻山 | c37.7353,140.2444,11 v
+vdpf_bnd | 磐梯山 | c37.6011,140.0722,11 v
+vdpf_chk | 鳥海山 | c39.0992,140.0489,11 v
+vdpf_esn | 恵山 | c41.8047,141.1661,11 v
+vdpf_fji | 富士山 | c35.3608,138.7275,11 v
+vdpf_hkd | 八甲田山 | c40.6589,140.8772,11 v
+vdpf_hkm | 北海道駒ヶ岳 | c42.0633,140.6772,11 v
+vdpf_hkn | 箱根山 | c35.2333,139.0208,11 v
+vdpf_hks | 白山 | c36.155,136.7714,11 v
+vdpf_htj | 八丈島 | c33.1369,139.7661,11 v
+vdpf_iot | 硫黄島 (該当施設なし) | c24.7506,141.2892,11 v
+vdpf_itb | 伊豆東部火山群 (該当施設なし) | c34.9031,139.0947,11 v
+vdpf_iwk | 岩木山 | c40.6558,140.3031,11 v
+vdpf_iwt | 岩手山 | c39.8525,141.0011,11 v
+vdpf_izo | 伊豆大島 | c34.7244,139.3944,11 v
+vdpf_kju | 九重山 | c33.0858,131.2489,11 v
+vdpf_koz | 神津島 | c34.2194,139.1531,11 v
+vdpf_krk | 栗駒山 | c38.9608,140.7883,11 v
+vdpf_krs | 霧島山 | c31.9342,130.8644,11 v
+vdpf_kst | 草津白根山 | c36.6439,138.5278,11 v
+vdpf_ktn | 口永良部島 | c30.4433,130.2172,11 v
+vdpf_ktr | 倶多楽 | c42.5053,141.1444,11 v
+vdpf_mak | 雌阿寒岳 | c43.3864,144.0086,11 v
+vdpf_mdg | 弥陀ヶ原 | c36.5711,137.5897,11 v
+vdpf_myk | 三宅島 | c34.0936,139.5261,11 v
+vdpf_nas | 那須岳 | c37.1247,139.9628,11 v
+vdpf_njm | 新島 | c34.3969,139.2703,11 v
+vdpf_nkn | 中之島 | c29.8592,129.8569,11 v
+vdpf_nks | 日光白根山 | c36.7986,139.3758,11 v
+vdpf_nrk | 乗鞍岳 | c36.1064,137.5536,11 v
+vdpf_nyk | 新潟焼山 | c36.9208,138.0358,11 v
+vdpf_ont | 御嶽山 | c35.8928,137.4803,11 v
+vdpf_sio | 薩摩硫黄島 | c30.7931,130.3053,11 v
+vdpf_skj | 桜島 | c31.5925,130.6567,11 v
+vdpf_swn | 諏訪之瀬島 | c29.6383,129.7139,11 v
+vdpf_tis | 大雪山 | c43.6636,142.8542,11 v
+vdpf_tkc | 十勝岳 | c43.4178,142.6864,11 v
+vdpf_trg | 鶴見岳・伽藍岳 | c33.2867,131.4297,11 v
+vdpf_trm | 樽前山 | c42.6906,141.3767,11 v
+vdpf_twd | 十和田 | c40.4594,140.91,11 v
+vdpf_unz | 雲仙岳 | c32.7614,130.2989,11 v
+vdpf_usu | 有珠山 | c42.5439,140.8392,11 v
+vdpf_ykd | 焼岳 | c36.2269,137.5869,11 v
+vdpf_zao | 蔵王山 | c38.1436,140.44,11 v
