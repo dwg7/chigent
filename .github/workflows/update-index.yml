@@ -1,0 +1,45 @@
+name: update-index
+
+# layers-martin(元は地理院の layers.txt)が更新されたら、索引を作り直して PR を出す。
+# 元データが前回と同じなら、build-layer-index.ts が何も書かないので PR は出ない。
+on:
+  schedule:
+    - cron: "17 3 * * 1" # 毎週月曜 03:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Rebuild the layer index and the search index
+        run: |
+          node scripts/build-layer-index.ts
+          node scripts/build-search-index.ts
+      - name: Run the tests on the new index
+        run: npm test
+      - name: Open a pull request if the index changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "no change"
+            exit 0
+          fi
+          branch="update-index-$(date -u +%Y%m%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add -A
+          git commit -m "索引を作り直す(layers-martin の更新に追従)"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "索引を作り直す(layers-martin の更新に追従)" \
+            --body "週次の自動更新。data/layers-index.json と docs/index/ を作り直した。npm test は通っている。マージすると GitHub Pages に反映される。"

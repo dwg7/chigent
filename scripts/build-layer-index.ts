@@ -29,6 +29,16 @@ const plain = (s: string) => s.replace(/<br\s*\/?>/gi, " ").replace(/<[^>]+>/g, 
 const catalog = await load("catalog.json");
 const report = await load("report.json");
 
+// 元データ(catalog と report.json)が前回と同じなら、何も書かずに終わる(定期実行で無意味な差分を出さない)
+const sha = (t: string) => createHash("sha256").update(t).digest("hex");
+try {
+  const prev = JSON.parse(await readFile(new URL("../data/layers-index.json", import.meta.url), "utf8"));
+  if (prev.source?.catalogSha256 === sha(catalog.text) && prev.source?.reportSha256 === sha(report.text)) {
+    console.log("up to date: layers-martin の catalog と report.json は前回と同じ。索引は変更しない。");
+    process.exit(0);
+  }
+} catch { /* 初回など */ }
+
 /**
  * t: タイトル, p: 階層, s: 状態, x: 拡張子(除外のみ),
  * z: [minzoom, maxzoom](catalog のみ), c: [緯度, 経度, ズーム](図の公開位置の中心 = layers.txt の area / TileJSON の center),
