@@ -535,5 +535,31 @@
    ],
    "maxOverlays": 1
   }
+ },
+ {
+  "id": "atsuma-2018",
+  "question": "平成30年北海道胆振東部地震の直後の厚真町の様子が分かる写真は？",
+  "basis": "製品型(災害対応): 平成30年北海道胆振東部地震の厚真地区の正射画像(9/6撮影が最も早い)。垂直写真(v)ではなく正射画像(z付き)",
+  "expect": {
+   "center": {
+    "lat": 42.73,
+    "lon": 141.9,
+    "withinKm": 15
+   },
+   "zoom": [
+    10,
+    17
+   ],
+   "layersAny": [
+    [
+     "20180906hokkaido_atsuma_0906do",
+     "20180906hokkaido_atsumachiku_0906do",
+     "20180906hokkaido_atsuma_0911do",
+     "20180906hokkaido_atsumaseibu_0911do",
+     "20180906hokkaido_abira_0911do"
+    ]
+   ],
+   "maxOverlays": 1
+  }
  }
 ]
