@@ -198,3 +198,9 @@ D-008 の「14,003 件」は layers.txt に現れるレイヤー行の数で、�
 - `v` の行にズーム範囲が無い。プロンプトで「市全体 12 の目安でよい」とした。
 - 目次の範囲の説明は、複数の分類をまとめて長い。エージェントは迷わず選べたが、Copilot での使いやすさは未確認。災害名から引ける別の一覧(キーワード索引)を足す案がある。
 - 公開後に、Pages の URL からの取得(Claude の WebFetch と Copilot の両方)を確かめる。
+
+### D-017 追記: 公開した(2026-10-09)
+
+- 藤村の承認のもと、dwg7/chigent を **public** にし、GitHub Pages を `main` の `/docs` から公開した。private のままでは現在のプランで Pages を使えなかったため(HTTP 422)。公開前に、追跡ファイルに秘密情報が無いことを確かめ、`data/layers-index.json` の来歴から手元の作業パスを除いた。
+- 公開先は組織のカスタムドメイン **`https://dwg7.unopengis.org/chigent/`**。`https://dwg7.github.io/chigent/…` は別ホストへ 301 で転送されるため、プロンプトと `INDEX_BASE_URL` は正規の URL に直した(別ホストへの転送を追わない取得手段がある)。HTTPS は強制した。
+- 確認: `https://dwg7.unopengis.org/chigent/index/router.txt` と `S10.txt` は 200、`text/plain; charset=utf-8`。Copilot からの取得は**未確認**(藤村が試す)。

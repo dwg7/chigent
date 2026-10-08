@@ -6,7 +6,7 @@
 
 - **指示:** `prompt/chigent.md` の全文。**文字数の上限は未確認**(8,000 字前後という情報があるが、製品・設定で異なりうる。D-009)。現状は上限の 7 割ほど。`npm test` が、上限の 95% を超えると失敗する。
 - **知識(ウェブ):** エージェントが次のサイトを取得できるようにする。取得できないと、座標とレイヤーを自分の知識で決めることになる。
-  - **`https://dwg7.github.io/chigent/index/`(検索用の索引。公開が必要。下の「索引の公開」)**
+  - **`https://dwg7.unopengis.org/chigent/index/`(検索用の索引。公開が必要。下の「索引の公開」)**
   - 座標は Copilot 自身の知識とウェブ検索で決める(D-014)。取得できれば、次は住所・市区町村の裏取りに使う任意の参照: `https://msearch.gsi.go.jp/`
   - `https://hfu.github.io/layers-martin/`(catalog と TileJSON)
   - `https://maps.gsi.go.jp/`(任意。URL の確認用)
@@ -40,6 +40,6 @@ Copilot の前に、指示だけを渡した新しい Claude のサブエージ�
 ## 索引の公開(GitHub Pages)
 
 1. このリポジトリを `dwg7/chigent` に push し、Settings → Pages で、ブランチ(main)の `/docs` フォルダを公開する。`docs/.nojekyll` は置いてある。
-2. `https://dwg7.github.io/chigent/index/router.txt` が開くことを確かめる(プロンプトはこの URL を書いている。違う場所なら `src/search-index.ts` の `INDEX_BASE_URL` と `prompt/chigent.md` を直し、`npm test` で一致を確かめる)。
+2. `https://dwg7.unopengis.org/chigent/index/router.txt` が開くことを確かめる(プロンプトはこの URL を書いている。違う場所なら `src/search-index.ts` の `INDEX_BASE_URL` と `prompt/chigent.md` を直し、`npm test` で一致を確かめる)。
 3. 索引は layers-martin / layers.txt が更新されたら作り直す: `node scripts/build-layer-index.ts && node scripts/build-search-index.ts`、コミットして push。
 4. Copilot で、router.txt と節ファイル(例: `S10.txt`)が取得でき、途中で切れないかを確かめる。1 ファイルは 8,000 字以内に収めてある。

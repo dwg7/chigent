@@ -1,7 +1,7 @@
 /**
  * data/layers-index.json から、公開用の小さな索引 docs/index/ を作る(DECISIONS.md D-017)。
  *   node scripts/build-search-index.ts
- * docs/ は GitHub Pages で公開する想定(https://dwg7.github.io/chigent/index/router.txt)。
+ * docs/ は GitHub Pages で公開する想定(https://dwg7.unopengis.org/chigent/index/router.txt)。
  */
 import { mkdirSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { buildSearchIndex, ROUTER_BUDGET, SHARD_BUDGET } from "../src/search-index.ts";

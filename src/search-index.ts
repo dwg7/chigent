@@ -8,7 +8,7 @@
 import type { LayerEntry, LayerIndex } from "./layers.ts";
 
 /** 公開先(GitHub Pages の想定。公開して取得できることを確かめるまでは未確認)。プロンプトにも同じ URL を書く。 */
-export const INDEX_BASE_URL = "https://dwg7.github.io/chigent/index/";
+export const INDEX_BASE_URL = "https://dwg7.unopengis.org/chigent/index/";
 export const SHARD_BUDGET = 8000; // 節ファイル 1 つの上限(文字数)
 export const ROUTER_BUDGET = 6000; // router.txt の上限(文字数)
 const SNAPSHOT = new Set(["sar_observation_snapshot", "aircraft_sar_observation_snapshot"]);
