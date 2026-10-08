@@ -32,13 +32,16 @@ chigent は **Staff** の実装です。Cartographer には、現世代の地理
 
 ## 現状
 
-- [x] URL ⇄ MapIntent(地理院方言)の変換と往復テスト
-- [x] レイヤーの索引(layers-martin、13,839 件)と `searchLayers` `validate`
-- [x] Copilot 用プロンプト(`prompt/chigent.md`。Claude のサブエージェントで 3 ラウンド検証済み、Copilot の実機では未検証)
-- [x] 検索用の小さな索引(`docs/index/`、34 ファイル。GitHub Pages で公開する想定。公開は未実施)
-- [ ] 索引の公開(GitHub Pages)と、Copilot の実機での検証・採点(`docs/copilot-setup.md`)
-- [ ] 事例の収集と、レイヤーの「核」の抽出
-- [ ] `geocode` `find_examples`
+- [x] URL ⇄ MapIntent(地理院方言)の変換と往復テスト(文法は [docs/url-grammar.md](docs/url-grammar.md))
+- [x] レイヤーの索引(layers-martin 由来、13,840 件)と `searchLayers` `validate`
+- [x] 事例の収集(地理院自身のサイトを中心に 76 ページ・約 1,260 リンク)と、核・周辺の仮判定([docs/layer-tiers.md](docs/layer-tiers.md))
+- [x] Microsoft 365 Copilot 用プロンプト([prompt/chigent.md](prompt/chigent.md))。Claude のサブエージェントで検証済み。**Copilot の実機では未検証**
+- [x] 検索用の小さな索引([docs/index/](docs/index/)、34 ファイル)。GitHub Pages で公開済み: <https://dwg7.unopengis.org/chigent/index/router.txt>
+- [x] 問い 25 件の採点([tests/questions/cases.json](tests/questions/cases.json)、`scripts/grade.ts`)
+- [ ] Copilot の実機での検証と採点([docs/copilot-setup.md](docs/copilot-setup.md))
+- [ ] 図の整備範囲(どの地域に図があるか)の実測と、索引への反映
+- [ ] 利用者の実際の問いの例の収集(いまの「核」は地理院のサイトの写しにすぎない)
+- [ ] `geocode` `find_examples`(プロンプト方式では、いまのところ不要)
 
 ## 使い方
 
