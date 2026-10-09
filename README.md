@@ -35,13 +35,27 @@ chigent は **Staff** の実装です。Cartographer には、現世代の地理
 - [x] URL ⇄ MapIntent(地理院方言)の変換と往復テスト(文法は [docs/url-grammar.md](docs/url-grammar.md))
 - [x] レイヤーの索引(layers-martin 由来、13,840 件)と `searchLayers` `validate`
 - [x] 事例の収集(地理院自身のサイトを中心に 76 ページ・約 1,260 リンク)と、核・周辺の仮判定([docs/layer-tiers.md](docs/layer-tiers.md))
-- [x] Microsoft 365 Copilot 用プロンプト([prompt/chigent.md](prompt/chigent.md))。Claude のサブエージェントで検証済み。**Copilot の実機では未検証**
-- [x] 検索用の小さな索引([docs/index/](docs/index/)、34 ファイル)。GitHub Pages で公開済み: <https://dwg7.unopengis.org/chigent/index/router.txt>
-- [x] 問い 25 件の採点([tests/questions/cases.json](tests/questions/cases.json)、`scripts/grade.ts`)
+- [x] Microsoft 365 Copilot 用プロンプト([prompt/chigent.md](prompt/chigent.md))。地名だけの問い、図の整備範囲の確認まで含む。**Copilot の実機では未検証**
+- [x] 検索用の小さな索引([docs/index/](docs/index/))。目次 `router.txt`、節 `S01〜S34.txt`、図の整備範囲 `coverage.txt`。GitHub Pages で公開: <https://dwg7.unopengis.org/chigent/index/router.txt>
+- [x] 図の整備範囲の実測(活断層図・治水地形分類図・沿岸海域土地条件図・年代別写真など 10 図。D-020)
+- [x] 問い 32 件の採点([tests/questions/cases.json](tests/questions/cases.json)、`scripts/grade.ts`)。Claude のサブエージェントでの検証結果は DECISIONS.md の D-015〜D-021(モデルを下げた回、同じ問いを繰り返した回を含む)
+- [x] CI(テストと索引の整合の確認。週次の索引更新。[.github/workflows/](.github/workflows/))
 - [ ] Copilot の実機での検証と採点([docs/copilot-setup.md](docs/copilot-setup.md))
-- [ ] 図の整備範囲(どの地域に図があるか)の実測と、索引への反映
 - [ ] 利用者の実際の問いの例の収集(いまの「核」は地理院のサイトの写しにすぎない)
+- [ ] 2 画面表示(昔と今を並べる)への対応
 - [ ] `geocode` `find_examples`(プロンプト方式では、いまのところ不要)
+
+作業の引き継ぎは [HANDOFF.md](HANDOFF.md)。
+
+## スクリプト
+
+| スクリプト | 役割 |
+|---|---|
+| `scripts/build-layer-index.ts` | layers-martin から `data/layers-index.json` を作る |
+| `scripts/build-search-index.ts` | 公開用の索引 `docs/index/`(`coverage.txt` を含む)を作る |
+| `scripts/probe-coverage.ts` | 地理院のタイルサーバーに低頻度で問い合わせ、図の整備範囲を実測する |
+| `scripts/collect-examples.ts` `analyze-examples.ts` `build-tiers.ts` | 事例の収集、分析、核・周辺の判定 |
+| `scripts/collect-answers.ts` `grade.ts` | サブエージェントの回答を集めて採点する |
 
 ## 使い方
 
