@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readdirSync, readFileSync } from "node:fs";
 import { buildSearchIndex, ROUTER_BUDGET, SHARD_BUDGET } from "../src/search-index.ts";
 import { loadLayerIndex } from "../src/layers.ts";
+import { buildCoverage, COVERAGE_BUDGET, loadCoverage } from "../src/coverage.ts";
 
 const index = loadLayerIndex();
 const built = buildSearchIndex(index);
@@ -54,8 +55,14 @@ test("no title can break the column separator", () => {
 });
 
 test("the published files in docs/index/ are up to date with the generator", () => {
-  const files = readdirSync(dir).filter((f) => /^(S\d+\.txt|router\.txt)$/.test(f)).sort();
-  assert.deepEqual(files, ["router.txt", ...built.shards.map((s) => `${s.name}.txt`)].sort());
+  const cov = loadCoverage();
+  const files = readdirSync(dir).filter((f) => /^(S\d+\.txt|router\.txt|coverage\.txt)$/.test(f)).sort();
+  assert.deepEqual(files, ["router.txt", ...(cov.files.length ? ["coverage.txt"] : []), ...built.shards.map((s) => `${s.name}.txt`)].sort());
+  if (cov.files.length) {
+    const text = buildCoverage(index, cov.files, cov.generatedAt);
+    assert.ok([...text].length <= COVERAGE_BUDGET, `coverage ${[...text].length}`);
+    assert.equal(readFileSync(new URL("coverage.txt", dir), "utf8"), text);
+  }
   assert.equal(readFileSync(new URL("router.txt", dir), "utf8"), built.router);
   for (const s of built.shards) assert.equal(readFileSync(new URL(`${s.name}.txt`, dir), "utf8"), s.text);
 });
