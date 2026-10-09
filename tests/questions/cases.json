@@ -620,5 +620,47 @@
   "expect": {
    "noUrl": true
   }
+ },
+ {
+  "id": "afm-ishigaki-outside",
+  "question": "石垣島の活断層図を見せて",
+  "expect": {
+   "layersForbid": [
+    "afm"
+   ],
+   "orNoUrl": true
+  },
+  "basis": "範囲外(D-020): 石垣島は活断層図(afm)の実測範囲の外。図を足さないか、URLを出さない"
+ },
+ {
+  "id": "afm-kumamoto-inside",
+  "question": "熊本市の活断層図を見せて",
+  "expect": {
+   "center": {
+    "lat": 32.8032,
+    "lon": 130.7079,
+    "withinKm": 15
+   },
+   "zoom": [
+    11,
+    16
+   ],
+   "layersAll": [
+    "afm"
+   ],
+   "maxOverlays": 1
+  },
+  "basis": "範囲内(D-020): 熊本市は活断層図(afm)の実測範囲の内"
+ },
+ {
+  "id": "lcmfc2-naha-outside",
+  "question": "那覇市の治水地形分類図を見せて",
+  "expect": {
+   "layersForbid": [
+    "lcmfc2"
+   ],
+   "orNoUrl": true
+  },
+  "basis": "範囲外(D-020): 那覇市は治水地形分類図(lcmfc2)の実測範囲の外"
  }
 ]
