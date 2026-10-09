@@ -77,3 +77,7 @@ README の「現状」「使い方」を、いまの実態(CI、公開 URL、索
 | `scripts/` | `build-layer-index` `build-search-index` `probe-coverage` `collect-examples` `analyze-examples` `build-tiers` `grade` `collect-answers` |
 | `data/` | `layers-index.json` `layer-tiers.json` `coverage/` `examples/` `seeds/` |
 | `tests/` | `roundtrip/` `questions/`(`cases.json`)ほか |
+
+## 進み具合(追記 2026-10-09)
+- 3-2(地名だけの問い)は完了。D-021 に記録。プロンプトに n=1 の例を追加、`npm test` 60件通過。
+- 3-1: 実測は ort_old10 まで進行中。残りは `node scripts/probe-coverage.ts` で再開。

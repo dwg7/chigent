@@ -58,3 +58,16 @@ test("orNoUrl and layersForbid", () => {
   assert.ok(!gradeAnswer(c, SHELTER.replace("skhb03", "04_tsunami_newlegend_data"), index).pass);
   assert.ok(!gradeAnswer(byId("koto-flood"), null, index).pass);
 });
+
+test("an empty blend= parameter fails; a single background layer without blend passes", () => {
+  const c = byId("onchozu-place");
+  const OK = "https://maps.gsi.go.jp/#14/42.222534/143.316803/&base=std&ls=std&disp=1&lcd=std&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
+  assert.ok(gradeAnswer(c, OK, index).pass, JSON.stringify(gradeAnswer(c, OK, index)));
+  assert.ok(!gradeAnswer(c, OK.replace("&disp=1", "&blend=&disp=1"), index).pass);
+});
+
+test("place-only questions: an unrequested overlay fails", () => {
+  const c = byId("kamikochi-place");
+  const U = "https://maps.gsi.go.jp/#14/36.2487/137.6372/&base=std&ls=std%7Crelief&blend=0&disp=11&lcd=relief&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
+  assert.ok(!gradeAnswer(c, U, index).pass);
+});

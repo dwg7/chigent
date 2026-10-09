@@ -84,6 +84,7 @@ export function gradeAnswer(c: QuestionCase, answer: string | null, index: Layer
   // 足りない桁は「relief を含む ID だけ 1」の既定になる(url-grammar.md)ので、意図が変わりうる。失敗にする。
   if (!intent.screen.vs) warnings.push("vs missing");
   const wantBlend = Math.max(0, ids.length - 1);
+  if (/[#&]blend=(&|$)/.test(answer)) failures.push("empty blend= parameter (omit blend when ls has one element)");
   const gotBlend = (intent.screen.blend ?? "").length;
   if (gotBlend !== wantBlend) failures.push(`blend has ${gotBlend} digits, expected ${wantBlend} (ls has ${ids.length} elements)`);
   if (!/^0*$/.test(intent.screen.blend ?? "")) warnings.push("blend contains 1 (multiply): not in the prompt's template");
