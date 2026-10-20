@@ -662,5 +662,153 @@
    "orNoUrl": true
   },
   "basis": "範囲外(D-020): 那覇市は治水地形分類図(lcmfc2)の実測範囲の外"
+ },
+ {
+  "id": "kinkakuji-wordy-past",
+  "question": "えーっと、できれば昔の写真とかで、京都の金閣寺のあたりが昔どうなってたのか、ちょっと知りたいんだけど…",
+  "basis": "言い回しが長い問い(D-022〜D-023)。主題は「昔の写真」。ort_riku10/USA10/old10 は京都を含む(D-020 の実測)",
+  "expect": {
+   "center": {
+    "lat": 35.0394,
+    "lon": 135.7292,
+    "withinKm": 6
+   },
+   "zoom": [
+    14,
+    17
+   ],
+   "layersAny": [
+    [
+     "ort_riku10",
+     "ort_USA10",
+     "ort_old10"
+    ]
+   ],
+   "maxOverlays": 1,
+   "maxExplainLines": 5
+  }
+ },
+ {
+  "id": "miyazaki-tsunami-typo",
+  "question": "みやざき市の津浪のしんすいそうていを見せて",
+  "basis": "表記ゆれのある問い。津波浸水想定(04_tsunami_newlegend_data)",
+  "expect": {
+   "center": {
+    "lat": 31.9077,
+    "lon": 131.4202,
+    "withinKm": 15
+   },
+   "zoom": [
+    10,
+    15
+   ],
+   "layersAll": [
+    "04_tsunami_newlegend_data"
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "kumamoto-castle-english",
+  "question": "Show me the area around Kumamoto Castle in a recent aerial photo.",
+  "basis": "英語の問い。主題は最新の写真(seamlessphoto)",
+  "expect": {
+   "center": {
+    "lat": 32.8064,
+    "lon": 130.7058,
+    "withinKm": 5
+   },
+   "zoom": [
+    14,
+    17
+   ],
+   "layersAny": [
+    [
+     "seamlessphoto"
+    ]
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "fuji-explain-me",
+  "question": "富士山ってどんな山？教えて",
+  "basis": "D-022: 解説を求められても、URL を先に返し、説明は短く。茂世路岳の観察(TRACKS)と同種の誘惑",
+  "expect": {
+   "center": {
+    "lat": 35.3606,
+    "lon": 138.7274,
+    "withinKm": 15
+   },
+   "zoom": [
+    8,
+    14
+   ],
+   "maxOverlays": 1,
+   "maxExplainLines": 5
+  }
+ },
+ {
+  "id": "takaosan-place",
+  "question": "高尾山を見せて",
+  "basis": "D-023: 場所だけの問いは背景の標準地図1枚。山のズームは14",
+  "expect": {
+   "center": {
+    "lat": 35.6252,
+    "lon": 139.2436,
+    "withinKm": 4
+   },
+   "zoom": [
+    13,
+    15
+   ],
+   "maxOverlays": 0,
+   "textAny": [
+    "重ねたい"
+   ]
+  }
+ },
+ {
+  "id": "chuo-ku-ambiguous",
+  "question": "中央区を見せて",
+  "basis": "D-023/D-024: 同名が複数(東京・大阪・札幌・福岡など)。場所だけを聞き返し、主題は聞かない",
+  "expect": {
+   "asks": {
+    "mention": [
+     "中央区|どの|どちら"
+    ],
+    "avoid": [
+     "主題|何を知りたい|どの地図|どんな地図|重ねたい"
+    ]
+   }
+  }
+ },
+ {
+  "id": "moon-map",
+  "question": "月面の地図を見せて",
+  "basis": "D-024: 地理院地図に無い。URL を作らず、できないと言う",
+  "expect": {
+   "noUrl": true,
+   "textAny": [
+    "できません|ありません|ない|対象外|扱え"
+   ]
+  }
+ },
+ {
+  "id": "okinawa-storm-surge",
+  "question": "沖縄本島の高潮の浸水想定を見せて",
+  "basis": "D-024: 高潮の想定は索引に無い。津波・洪水で代用せず「ない」と言い、重ねるハザードマップを案内する",
+  "expect": {
+   "orNoUrl": true,
+   "layersForbid": [
+    "04_tsunami_newlegend_data",
+    "01_flood_l2_shinsuishin_data",
+    "01_flood_l1_shinsuishin_newlegend_data"
+   ],
+   "textAny": [
+    "disaportal"
+   ],
+   "maxOverlays": 1
+  }
  }
 ]

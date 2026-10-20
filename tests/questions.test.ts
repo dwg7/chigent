@@ -71,3 +71,29 @@ test("place-only questions: an unrequested overlay fails", () => {
   const U = "https://maps.gsi.go.jp/#14/36.2487/137.6372/&base=std&ls=std%7Crelief&blend=0&disp=11&lcd=relief&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
   assert.ok(!gradeAnswer(c, U, index).pass);
 });
+
+test("answer text: the URL must come first, explanations stay short (D-022)", () => {
+  const c = byId("fuji-explain-me");
+  const U = "https://maps.gsi.go.jp/#11/35.360600/138.727400/&base=std&ls=std&disp=1&lcd=std&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
+  assert.ok(gradeAnswer(c, U, index, `${U}\n富士山を標準地図で表示しました。`).pass);
+  assert.ok(!gradeAnswer(c, U, index, `富士山は日本一高い山です。\n${U}`).pass);
+  assert.ok(!gradeAnswer(c, U, index, `${U}\n1\n2\n3\n4\n5\n6`).pass);
+});
+
+test("answer text: a question back must be only about the place (D-023)", () => {
+  const c = byId("chuo-ku-ambiguous");
+  assert.ok(gradeAnswer(c, null, index, "中央区は、どの都市の中央区でしょうか？").pass);
+  assert.ok(!gradeAnswer(c, null, index, "どの地図を重ねたいですか？ 中央区はどちらですか？").pass); // 主題も聞いた
+  assert.ok(!gradeAnswer(c, null, index, "中央区を表示します。").pass); // 質問になっていない
+  assert.ok(!gradeAnswer(c, "https://maps.gsi.go.jp/#12/35.67/139.77/&base=std&ls=std&disp=1&lcd=std&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m", index, "中央区？").pass); // URL を作った
+});
+
+test("answer text: cases that check text fail when only a URL is given; 'not available' answers are checked", () => {
+  assert.ok(!gradeAnswer(byId("chuo-ku-ambiguous"), null, index).pass);
+  const c = byId("moon-map");
+  assert.ok(gradeAnswer(c, null, index, "月面の地図は地理院地図にありません。").pass);
+  assert.ok(!gradeAnswer(c, null, index, "こちらをご覧ください。").pass);
+  const s = byId("okinawa-storm-surge");
+  assert.ok(gradeAnswer(s, null, index, "高潮の想定はこの索引にありません。重ねるハザードマップ https://disaportal.gsi.go.jp/ をご覧ください。").pass);
+  assert.ok(!gradeAnswer(s, null, index, "ありません。").pass); // 案内先が無い
+});

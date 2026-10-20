@@ -26,6 +26,14 @@ export interface QuestionCase {
     layersAny?: string[][];
     /** 重ねる枚数(背景を除く)の上限 */
     maxOverlays?: number;
+    /** 聞き返すのが正解の問い。URL を返さず、質問(？)だけを返す。mention はすべて、avoid はどれも、回答文に現れる(正規表現)。要 text。 */
+    asks?: { mention?: string[]; avoid?: string[] };
+    /** 回答文のどれか一つに合う正規表現(例: 「ない」と答えるか、案内先を示すか)。要 text。 */
+    textAny?: string[];
+    /** 回答文のすべてに合う正規表現。要 text。 */
+    textAll?: string[];
+    /** URL の行より後の、空でない行数の上限(D-022: 説明は短く)。要 text。 */
+    maxExplainLines?: number;
     /** base= として許すもの(既定は std/pale/blank/english/seamlessphoto/ort のどれか) */
     base?: string[];
   };
@@ -44,15 +52,53 @@ const km = (a: { lat: number; lon: number }, b: { lat: number; lon: number }) =>
   return 2 * R * Math.asin(Math.sqrt(h));
 };
 
-/** answer は Copilot が返した URL。URL を返さなかったときは null。 */
-export function gradeAnswer(c: QuestionCase, answer: string | null, index: LayerIndex = loadLayerIndex()): Grade {
+/** answers.json の一つの値: URL だけ(文字列か null)、または回答文つき。 */
+export type AnswerValue = string | null | { url: string | null; text: string };
+
+export function splitAnswerValue(v: AnswerValue): { url: string | null; text?: string } {
+  return v !== null && typeof v === "object" ? { url: v.url, text: v.text } : { url: v };
+}
+
+/** 回答文の検査(D-022〜D-024): URL が先、説明は短く、聞き返しは質問だけ、「ない」と言う、など。 */
+function gradeText(e: QuestionCase["expect"], url: string | null, text: string | undefined, failures: string[], warnings: string[]): void {
+  const needsText = e.asks || e.textAny || e.textAll || e.maxExplainLines !== undefined;
+  if (text === undefined) {
+    if (needsText) failures.push("this case checks the answer text, but only a URL was given");
+    return;
+  }
+  const lines = text.split("\n").map((l) => l.trim()).filter((l) => l !== "");
+  if (url !== null) {
+    const at = lines.findIndex((l) => l.includes(url));
+    if (at > 0) failures.push("the URL is not on the first line (D-022: URL first)");
+    if (e.maxExplainLines !== undefined && at >= 0 && lines.length - at - 1 > e.maxExplainLines) failures.push(`${lines.length - at - 1} explanation lines > ${e.maxExplainLines}`);
+  }
+  if (e.asks) {
+    if (!/[？?]/.test(text)) failures.push("expected a question back, but the answer has no question mark");
+    for (const m of e.asks.mention ?? []) if (!new RegExp(m).test(text)) failures.push(`the question does not mention /${m}/`);
+    for (const m of e.asks.avoid ?? []) if (new RegExp(m).test(text)) failures.push(`the question must not ask about /${m}/`);
+  }
+  if (e.textAny && !e.textAny.some((m) => new RegExp(m).test(text))) failures.push(`the answer text matches none of /${e.textAny.join("/, /")}/`);
+  for (const m of e.textAll ?? []) if (!new RegExp(m).test(text)) failures.push(`the answer text does not match /${m}/`);
+}
+
+/** answer は Copilot が返した URL。URL を返さなかったときは null。text は回答文(あれば回答文も採点する)。 */
+export function gradeAnswer(c: QuestionCase, answer: string | null, index: LayerIndex = loadLayerIndex(), text?: string): Grade {
   const failures: string[] = [], warnings: string[] = [];
   const e = c.expect;
+  gradeText(e, answer, text, failures, warnings);
+  if (e.asks) {
+    if (answer !== null) failures.push("a URL was returned for a question that should be asked back");
+    return { pass: failures.length === 0, failures, warnings };
+  }
   if (e.noUrl) {
     if (answer !== null) failures.push("a URL was returned for a question that a map cannot answer");
     return { pass: failures.length === 0, failures, warnings };
   }
-  if (answer === null) return e.orNoUrl ? { pass: true, failures, warnings: ["no URL returned (allowed)"] } : { pass: false, failures: ["no URL returned"], warnings };
+  if (answer === null) {
+    if (!e.orNoUrl) failures.push("no URL returned");
+    else warnings.push("no URL returned (allowed)");
+    return { pass: failures.length === 0, failures, warnings };
+  }
 
   let parsed;
   try { parsed = parseGsiUrl(answer); } catch (err) { return { pass: false, failures: [`unparsable URL: ${err}`], warnings }; }
