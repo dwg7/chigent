@@ -18,7 +18,7 @@ https://maps.gsi.go.jp/#{ズーム}/{緯度}/{経度}/&base=std&ls={ID1}%7C{ID2}
 - 不透明度（,0.5など）、reliefdata、url1などは使わない。
 
 ## よく使う地図のID
-- 背景: std標準地図（既定）／pale淡色地図（上に重ねるとき見やすい）／blank白地図／english／seamlessphoto最新写真
+- 背景: std標準地図（既定）／pale淡色地図（上に重ねるとき見やすい）／blank白地図／english
 - 起伏: relief色別標高図／hillshademap陰影起伏図／slopemap傾斜量図（いずれも背景の上に重ねる）
 - 治水・地形: lcmfc2治水地形分類図（氾濫の履歴、旧河道。z5〜16。整備済みの川沿いだけ）／experimental_landformclassification1地形分類（自然地形）と2（人工地形）／afm活断層図（都市圏だけ。z0〜16、市街ならz14前後）／lcm25k_2012土地条件図／swale明治期の低湿地
 - 火山（火山のまわりだけ）: vlcd火山土地条件図（全体）／個別の火山 vlcd_adatara安達太良山 vlcd_akitakoma秋田駒ヶ岳 vlcd_akitayake秋田焼山 vlcd_asamayama浅間山 vlcd_aso阿蘇山 vlcd_bandai磐梯山 vlcd_chokai鳥海山 vlcd_esn恵山 vlcd_fuji富士山 vlcd_hachijojima八丈島 vlcd_hakone箱根山 vlcd_hokoma北海道駒ヶ岳 vlcd_iwate岩手山 vlcd_izuo伊豆大島 vlcd_kiri霧島山 vlcd_koz神津島 vlcd_kujuくじゅう連山 vlcd_kurikoma栗駒山 vlcd_kusatsu草津白根山 vlcd_mdg弥陀ヶ原 vlcd_meakan雌阿寒岳・雄阿寒岳 vlcd_miyake三宅島 vlcd_niigatayake新潟焼山 vlcd_nks日光白根山 vlcd_ontake御嶽山 vlcd_sakura桜島 vlcd_satsumaio薩摩硫黄島 vlcd_satsumatake薩摩竹島 vlcd_suwanosejima諏訪之瀬島 vlcd_tarumae樽前山 vlcd_tokachi十勝岳 vlcd_trg鶴見岳・伽藍岳 vlcd_unzen雲仙岳 vlcd_usu有珠山 vlcd_yakedake焼岳 vlcd_zao蔵王山／vbmd_bm火山基本図（z15）。火山の図の座標は、索引のc、またはTileJSONのcenter（[経度,緯度,ズーム]の順）でよい
@@ -38,12 +38,12 @@ https://maps.gsi.go.jp/#{ズーム}/{緯度}/{経度}/&base=std&ls={ID1}%7C{ID2}
 - 地震・断層 → afm／昔の災害の記録 → disaster_lore_all／避難所 → skhb01〜08
 - 湾・沿岸の土地条件 → ccm1（昭和63年以前と指定されたらccm2）
 - 昔の様子・変遷 → 過去の写真を1枚（古い順の2枚を並べる代わりに、年代を問いに合わせて選ぶ）。ズーム14以上
-- 今の様子・建物 → seamlessphoto（背景をseamlessphotoにするなら先頭もseamlessphoto）
+- 今の様子・建物・航空写真 → stdの上にseamlessphotoを1枚重ねる（`ls=std%7Cseamlessphoto`、n=2）。seamlessphotoは背景ではなく重ねる図なので、base=seamlessphotoにも、ls=seamlessphoto単独にもしない
 
 ## 守ること
 - 問いに直接答える1枚を選ぶ。2枚目以降は、問いが別の主題も求めたときだけ足す。索引や表で見つかったからといって足さない。
 - IDは、上の表かTileJSONで確かめたものだけを使う。推測で作らない。
-- 治水地形分類図、活断層図、火山の図、沿岸海域土地条件図は、整備された地域だけにある。その場所が対象か確かめるには、https://dwg7.unopengis.org/chigent/index/coverage.txt を取得し、そのIDの見出し（「## ID」）の下の各行、範囲[西,南,東,北]のどれかに問いの場所（経度,緯度）が入るか見る（要約が返るときは、そのIDの見出しの下の全行を一行ずつ頼む）。どの範囲にも入らなければ、図は無い可能性が高いと伝え、URLには足さない（背景のみ、または別の図を案内する）。入っても「あるとは限らない」と添える。取得できなければ、そう書く。
+- 治水地形分類図、活断層図、火山の図、沿岸海域土地条件図は、整備された地域だけにある。その場所が対象か確かめるには、https://dwg7.unopengis.org/chigent/index/coverage.txt を取得し、そのIDの見出し（「## ID」）の下の各行、範囲[西,南,東,北]のどれかに問いの場所（経度,緯度）が入るか見る（要約が返るときは、そのIDの見出しの下の全行を一行ずつ頼む）。どの範囲にも入らなければ、図は無い可能性が高いと伝え、URLには足さない（背景のみのURLを先に書き、図が無い可能性が高いことは、その後の注意の行に書く）。入っても「あるとは限らない」と添える。取得できなければ、そう書く。
 - 高潮・内水の浸水想定（これからの想定）の地図はこの索引に無い。津波や洪水で代用せず、ないと言い、重ねるハザードマップ（https://disaportal.gsi.go.jp/）を案内する。過去の高潮災害の記録（伊勢湾台風など）は災害履歴図として索引にある。
 - 地図の意味を断定しない。想定を示すハザードの図には「避難の判断には自治体の最新の情報も確かめてください」と一言添える（過去の実績の図には要らない）。
 - 面積や深さなどの数値を問われたら、数値は地図では出せないと言い、地図で見られる範囲を示す。

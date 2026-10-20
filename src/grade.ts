@@ -34,7 +34,7 @@ export interface QuestionCase {
     textAll?: string[];
     /** URL の行より後の、空でない行数の上限(D-022: 説明は短く)。要 text。 */
     maxExplainLines?: number;
-    /** base= として許すもの(既定は std/pale/blank/english/seamlessphoto/ort のどれか) */
+    /** base= として許すもの(既定は std/pale/blank/english/ort のどれか) */
     base?: string[];
   };
 }
@@ -73,7 +73,7 @@ function gradeText(e: QuestionCase["expect"], url: string | null, text: string |
     if (e.maxExplainLines !== undefined && at >= 0 && lines.length - at - 1 > e.maxExplainLines) failures.push(`${lines.length - at - 1} explanation lines > ${e.maxExplainLines}`);
   }
   if (e.asks) {
-    if (!/[？?]/.test(text)) failures.push("expected a question back, but the answer has no question mark");
+    if (!/[？?]|(でしょうか|ですか|ますか|ませんか|ください)[。.]?\s*$/m.test(text)) failures.push("expected a question back, but the answer does not read as a question");
     for (const m of e.asks.mention ?? []) if (!new RegExp(m).test(text)) failures.push(`the question does not mention /${m}/`);
     for (const m of e.asks.avoid ?? []) if (new RegExp(m).test(text)) failures.push(`the question must not ask about /${m}/`);
   }
@@ -114,7 +114,9 @@ export function gradeAnswer(c: QuestionCase, answer: string | null, index: Layer
 
   const ids = intent.map.layers.map((l) => l.id);
   const base = intent.map.base ?? ids[0];
-  const bases = e.base ?? ["std", "pale", "blank", "english", "seamlessphoto", "ort"];
+  // base= と ls の先頭が違うと、gsimaps は base を ls の前に足し、disp がずれる(写真を見せたいのに base=std など)。
+  if (intent.map.base !== undefined && ids.length > 0 && intent.map.base !== ids[0]) failures.push(`base='${intent.map.base}' differs from ls[0]='${ids[0]}': gsimaps prepends the base map and shifts disp`);
+  const bases = e.base ?? ["std", "pale", "blank", "english", "ort"];
   if (!bases.includes(base)) failures.push(`base '${base}' not in ${bases.join(",")}`);
   const overlays = ids.slice(1); // 先頭は背景地図
   if (e.maxOverlays !== undefined && overlays.length > e.maxOverlays) failures.push(`${overlays.length} overlays > ${e.maxOverlays}`);
