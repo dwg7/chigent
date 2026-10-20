@@ -38,7 +38,7 @@ chigent は **Staff** の実装です。Cartographer には、現世代の地理
 - [x] Microsoft 365 Copilot 用プロンプト([prompt/chigent.md](prompt/chigent.md))。地名だけの問い、図の整備範囲の確認まで含む。**Copilot の実機では未検証**
 - [x] 検索用の小さな索引([docs/index/](docs/index/))。目次 `router.txt`、節 `S01〜S34.txt`、図の整備範囲 `coverage.txt`。GitHub Pages で公開: <https://dwg7.unopengis.org/chigent/index/router.txt>
 - [x] 図の整備範囲の実測(活断層図・治水地形分類図・沿岸海域土地条件図・年代別写真など 10 図。D-020)
-- [x] 問い 40 件の採点(回答文の採点を含む)([tests/questions/cases.json](tests/questions/cases.json)、`scripts/grade.ts`)。Claude のサブエージェントでの検証結果は DECISIONS.md の D-015〜D-021(モデルを下げた回、同じ問いを繰り返した回を含む)
+- [x] 問い 43 件の採点(回答文の採点を含む)([tests/questions/cases.json](tests/questions/cases.json)、`scripts/grade.ts`)。Claude のサブエージェントでの検証結果は DECISIONS.md の D-015〜D-021(モデルを下げた回、同じ問いを繰り返した回を含む)
 - [x] CI(テストと索引の整合の確認。週次の索引更新。[.github/workflows/](.github/workflows/))
 - [ ] Copilot の実機での検証と採点([docs/copilot-setup.md](docs/copilot-setup.md))
 - [ ] 利用者の実際の問いの例の収集(いまの「核」は地理院のサイトの写しにすぎない)
