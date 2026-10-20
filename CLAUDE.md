@@ -45,3 +45,9 @@ dwg7/evergreen と共有する概念(Staccato の役割、MapIntent の共通部
 5. レイヤー索引は `node scripts/build-layer-index.ts`(layers-martin から。D-008、D-010)。
 6. 検索用の小さな索引(公開用)は `node scripts/build-search-index.ts` → `docs/index/`(D-017)。`data/layers-index.json` を更新したら作り直す。`npm test` が、生成物と公開ファイルの一致を確かめる。
 7. プロンプトを直したら、`npm test`(例の URL・ID・文字数)→ サブエージェントに `tests/questions/cases.json` の問いを解かせる → `scripts/grade.ts` で採点(D-016、D-017)。
+
+## 踏み跡(TRACKS.md)
+
+利用者から「TRACKS.md に書いて」「踏み跡として残して」「違和感として記録して」などの指示があったら、`TRACKS.md` への追記案を作る。**改善案や設計変更案を書いてはならない。観察の記録に留める**(結論も出さない)。書式と位置づけは `TRACKS.md` の冒頭。改善案にするかは Issue、採用は DECISIONS.md の責務。
+
+設計原則は DECISIONS.md の D-022〜D-025(検索エンジンであり解説エンジンではない / 見方は利用者が決める / 確実性を優先する / 改善の対象外)。ルールを足したくなったら、まずこれに照らす。
