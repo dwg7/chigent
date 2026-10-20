@@ -318,7 +318,7 @@ D-008 の「14,003 件」は layers.txt に現れるレイヤー行の数で、�
 
 **採点の拡張(`src/grade.ts`、`collect-answers.ts --text`)。** 回答文も採点できるようにした。(1) URL は回答の最初の行にある(D-022)。(2) URL より後の説明の行数の上限(`maxExplainLines`)。(3) 聞き返す問い(`asks`): URL を作らず、質問の形で、`mention` を含み、`avoid`(主題を聞く言葉)を含まない(D-023)。(4) 「ない」と言い案内先を示す(`textAny`、D-024)。(5) `base=` と `ls` の先頭が食い違う URL は失敗。
 
-**問いを 8 件足した(合計 43 件)。** 長い言い回し(金閣寺の昔の写真)、表記ゆれ(みやざき市の津浪)、英語(熊本城の航空写真)、解説の誘い(富士山ってどんな山)、場所だけ(高尾山)、同名(中央区)、地理院地図に無い(月面)、索引に無い想定(沖縄本島の高潮)。
+**問いを 8 件足した(合計 40 件)。** 長い言い回し(金閣寺の昔の写真)、表記ゆれ(みやざき市の津浪)、英語(熊本城の航空写真)、解説の誘い(富士山ってどんな山)、場所だけ(高尾山)、同名(中央区)、地理院地図に無い(月面)、索引に無い想定(沖縄本島の高潮)。
 
 **見つかったこと。** 1 回目(16 回答 + 整備範囲 3 問): 失敗はいずれも修正の対象だった。
 - **写真の URL(プロンプトの誤り)。** 熊本城で 2 回とも `base=std&ls=seamlessphoto&disp=1`。gsimaps の背景は std/pale/blank/english/ort だけで、seamlessphoto は重ねる図。実例も `std|seamlessphoto`(`blend=0&disp=11`)。プロンプトの「背景は…seamlessphoto」「背景をseamlessphotoにするなら先頭もseamlessphoto」が誤りだったので、「stdの上にseamlessphotoを1枚重ねる(n=2)。base=seamlessphotoにも、ls=seamlessphoto単独にもしない」に直した。採点の既定の背景からも seamlessphoto を外した。
