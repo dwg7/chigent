@@ -58,22 +58,22 @@ export function describeCoverage(data: CoverageData, maxRects = 24): string {
     z--;
     rects = rectangles(tiles);
   }
-  return rects.map(([x0, y0, x1, y1]) => `[${r1(lon(x0, z))},${r1(lat(y1 + 1, z))},${r1(lon(x1 + 1, z))},${r1(lat(y0, z))}]`).join("");
+  return rects.map(([x0, y0, x1, y1]) => `[${r1(lon(x0, z))},${r1(lat(y1 + 1, z))},${r1(lon(x1 + 1, z))},${r1(lat(y0, z))}]`).join("\n"); // 1 行に 1 範囲(長い行は取得側の要約で落ちる。D-020)
 }
 
 export function buildCoverage(index: LayerIndex, all: CoverageData[], generatedAt: string): string {
   const lines = [
     "# chigent 図の整備範囲(実測)",
     `# 実測日: ${generatedAt.slice(0, 10)}。地理院のタイルサーバーで、図のタイルがあるかを調べた結果。`,
-    "各行は「ID | タイトル | 図がある範囲[西,南,東,北](度)」。範囲は約60km四方(ズーム9)のタイルを長方形にまとめたもので、粗い。",
+    "図ごとに「## ID タイトル」の見出しがあり、その下の各行が、図がある範囲[西,南,東,北](度)の一つ。範囲は約60km四方(ズーム9)のタイルを長方形にまとめたもので、粗い。",
     "問いの場所(経度,緯度)がどの範囲にも入らなければ、その図は無い可能性が高い。範囲に入っても、その場所に図があるとは限らない。",
     "",
   ];
   for (const d of all.sort((a, b) => (a.id < b.id ? -1 : 1))) {
     const e = index.layers[d.id];
-    lines.push(`${d.id} | ${e?.t ?? ""} | ${d.present.length === 0 ? "なし" : describeCoverage(d)}`);
+    lines.push(`## ${d.id} ${e?.t ?? ""}`, d.present.length === 0 ? "なし" : describeCoverage(d), "");
   }
-  return lines.join("\n") + "\n";
+  return lines.join("\n").replace(/\n+$/, "") + "\n";
 }
 
 /** data/coverage/*.json を読む。 */

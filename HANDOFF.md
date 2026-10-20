@@ -1,14 +1,14 @@
 # HANDOFF — chigent の作業の引き継ぎ(2026-10-09 時点)
 
-compact などでセッションが切れたあとに、ここから再開する。決めたことと理由は `DECISIONS.md`(D-001〜D-020)、作業規則は `CLAUDE.md`、文法は `docs/url-grammar.md`。この文書は「いま何がどこまで済んでいて、次に何をするか」だけを書く。
+compact などでセッションが切れたあとに、ここから再開する。決めたことと理由は `DECISIONS.md`(冒頭に目次)。観察は `TRACKS.md`、作業規則は `CLAUDE.md`、文法は `docs/url-grammar.md`。この文書は「いま何がどこまで済んでいて、次に何をするか」だけを書く。
 
 ## 1. これは何か
 
-chigent = 問いに対して地理院地図の URL を返すエージェント。**最終形は Microsoft 365 Copilot(ウェブアクセスあり)のプロンプト**(`prompt/chigent.md`、約 5,900 字)。コードは、プロンプトの出力を採点する基準と、プロンプトに載せる知識(索引)の生成器。
+chigent = 問いに対して地理院地図の URL を返すエージェント。**最終形は Microsoft 365 Copilot(ウェブアクセスあり)のプロンプト**(`prompt/chigent.md`、文字数は `npm test` が検査する)。コードは、プロンプトの出力を採点する基準と、プロンプトに載せる知識(索引)の生成器。
 
 - リポジトリ: <https://github.com/dwg7/chigent>(2026-10-09 に public)。`main` に push 済み。
 - 索引の公開: <https://dwg7.unopengis.org/chigent/index/router.txt>(GitHub Pages、`main` の `/docs`)。`dwg7.github.io/...` は別ホストへ 301 なので使わない。
-- Node ≥ 22.18、依存なし。`npm test`(いま 58 件)。CI は `.github/workflows/test.yml`。
+- Node ≥ 22.18、依存なし。`npm test`。CI は `.github/workflows/test.yml`。
 
 ## 2. できていること
 
@@ -16,29 +16,20 @@ chigent = 問いに対して地理院地図の URL を返すエージェント�
 - レイヤー索引(`data/layers-index.json`、13,840 ID)。layers-martin 由来。小文字化された ID の復元、LayerGroup、GeoJSON を補っている(D-010)。
 - 公開用の小さな索引 `docs/index/`(`router.txt` + 節 `S01〜S34.txt`、各 8,000 字以内。D-017)。
 - プロンプト `prompt/chigent.md` と、その検査(`src/prompt-check.ts`:文字数、例の URL、表の ID の実在と大文字小文字)。
-- 問い 25 件の採点(`tests/questions/cases.json`、`src/grade.ts`、`scripts/grade.ts`)。
+- 問いの採点(`tests/questions/cases.json`、`src/grade.ts`、`scripts/grade.ts`)。
 - Claude のサブエージェントでの検証(D-015〜D-019): 24 問の全回帰で 23/24(失敗は新潟の「問われていない図を足した」1 件、規則を足して対処)、索引でしか見つからない 7 問で 7/7、haiku で 25 問 25/25、難しい 4 問×3 回で 11/12(失敗は取得側の要約が行を落としたため)。
 
 ## 3. 未完了(次にやること)
 
-### 3-1. 図の整備範囲の実測(課題 5。**実行中**)
-- `scripts/probe-coverage.ts` が地理院のタイルサーバーに低頻度(1 秒に 3 回以下)で問い合わせ、`data/coverage/<ID>.json` に「図があるズーム 9 のタイル」を保存する。既定の対象: `afm lcmfc2 ccm1 ccm2 ort_USA10 ort_riku10 ort_old10 ort_1928 lcm25k_2012 swale`。1 レイヤー約 5〜10 分。
-- 再開: `node scripts/probe-coverage.ts`(済んだレイヤーは飛ばす。途中だったレイヤーは最初からやり直す)。ログはバックグラウンド実行時の標準出力。
-- 済んだら: `node scripts/build-search-index.ts` → `docs/index/coverage.txt`(図がある範囲 `[西,南,東,北]` の一覧)が作られ、router.txt が coverage.txt に触れる。`npm test` が生成物との一致を確かめる。
-- そのあと **プロンプトに coverage.txt の使い方を足す**(まだ書いていない)。例:「活断層図・治水地形分類図・沿岸海域土地条件図などは、`…/index/coverage.txt` の範囲に問いの場所が入るかを確かめる。入らなければ『図は無い可能性が高い』と答える」。足したら、熊本の活断層(afm)、新潟の治水地形分類図(lcmfc2)、伊勢湾の沿岸(ccm1)でサブエージェントに確かめる。
-- 結果と判断を DECISIONS.md に **D-020** として書く(まだ書いていない。`scripts/probe-coverage.ts` の冒頭コメントと `src/coverage.ts` が D-020 を参照している)。
+2026-10-21 のリポジトリ全体レビューで合意した順(ユーザー承認済み): **A → C → B**。
 
-### 3-2. 「音調津を見せて」型の問い(地名だけの問い)の検証
-2026-10-09 にユーザーから依頼。主題の指定が無く、地名だけの問いで、いまのプロンプトが最良かを検証する(結果は DECISIONS.md に D-021 として)。進み具合はこの文書の末尾に追記する。
-
-### 3-3. README を実態に合わせる(**ユーザーの指示: 一連の作業が終わったら**)
-README の「現状」「使い方」を、いまの実態(CI、公開 URL、索引、coverage、検証結果、`scripts/` の一覧)に合わせて更新する。作業の最後に行う。
-
-### 3-4. その他の候補(承認済みの範囲外)
-- 2 画面表示(昔と今を並べる)への対応。文法は調査済み(`vs` の `s1`、`base2` `ls2` `disp2` ほか)。
-- 採点の問いを増やす(曖昧な地名、複数の場所、誤字、英語、聞き返しが正解の問い)。聞き返しの期待値の表現が `src/grade.ts` に無い。
-- 上流への報告の下書き(layers-martin の小文字化・LayerGroup の落ち・GeoJSON の除外、地理院ページの不具合)。
-- Copilot 実機での検証(**ユーザーが行う**。`docs/copilot-setup.md` に手順)。
+- **A(済)** 古い数字の文書を直す / coverage.txt を 1 範囲 1 行にする(D-020 の限界(2)への対処。**再検証はまだ**: 公開後にサブエージェントで afm・lcmfc2 の内外 6 問を解かせる) / DECISIONS.md に目次を付け D-020・D-021 の並びを直す。
+- **C** 採点で D-022〜D-024 を測れるようにする: 期待値に「聞き返しは場所だけ(`asks`)」「回答の順序(URL が解説より先)」を足す。敵対的な問い(長い言い回し、誤字、英語、複数の場所、主題の言い換え)を 8〜10 件足し、サブエージェントで回す。
+- **B** プロンプトの余白(いま約 81%、上限 8,000 字の想定)。測れるようになってから削る。候補: 火山 36 図の名前の重複、災害の日付 ID の一覧を索引側へ。
+- D(運用): coverage の実測は手動(年 1 回程度。`node scripts/probe-coverage.ts`、地理院に負荷をかけるので CI にしない)。スクリプトの純粋関数に単体テストを足す。
+- E(要承認): 2 画面表示、layers-martin への上流報告の下書き。
+- Copilot 実機での検証は**ユーザーが行う**(`docs/copilot-setup.md`)。
+- 週次の索引更新ワークフローが PR を作れるよう、リポジトリ設定 "Allow GitHub Actions to create and approve pull requests" をユーザーが有効にする(または PR を手で開く)。
 
 ## 4. 作業の流儀(ユーザーの指示)
 
@@ -77,9 +68,3 @@ README の「現状」「使い方」を、いまの実態(CI、公開 URL、索
 | `scripts/` | `build-layer-index` `build-search-index` `probe-coverage` `collect-examples` `analyze-examples` `build-tiers` `grade` `collect-answers` |
 | `data/` | `layers-index.json` `layer-tiers.json` `coverage/` `examples/` `seeds/` |
 | `tests/` | `roundtrip/` `questions/`(`cases.json`)ほか |
-
-## 進み具合(追記 2026-10-09)
-- 3-2(地名だけの問い)は完了。D-021 に記録。プロンプトに n=1 の例を追加、`npm test` 60件通過。
-- 3-1: 実測は ort_old10 まで進行中。残りは `node scripts/probe-coverage.ts` で再開。
-- 3-1(coverage)完了、D-020 に記録。プロンプトに使い方を追記、範囲の内外の問い3件を追加し 6/6 合格。
-- 3-3(README)更新済み。残りは任意候補(3-4)と、Copilot 実機の検証(ユーザー)。

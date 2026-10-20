@@ -37,11 +37,11 @@ test("coarsens until the list is short enough", () => {
   const tiles: Array<[number, number]> = [];
   for (let i = 0; i < 40; i++) tiles.push([100 + 2 * i, 200 + 2 * i]); // 斜めに離れた 40 枚
   const s = describeCoverage({ id: "x", zEnd: 9, present: tiles }, 24);
-  assert.ok(s.split("][").length <= 24);
+  assert.ok(s.split("\n").length <= 24);
 });
 
 test("buildCoverage lists layers with their titles", () => {
   const index = loadLayerIndex();
   const text = buildCoverage(index, [{ id: "afm", zEnd: 9, present: [[448, 203]] }], "2026-10-09T00:00:00Z");
-  assert.match(text, /^afm \| 活断層図（都市圏活断層図） \| \[/m);
+  assert.match(text, /^## afm 活断層図（都市圏活断層図）\n\[/m);
 });

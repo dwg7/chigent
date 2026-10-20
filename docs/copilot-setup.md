@@ -1,10 +1,10 @@
 # Microsoft 365 Copilot のエージェントに載せる
 
-プロンプトの本体は [`prompt/chigent.md`](../prompt/chigent.md)(約 5,700 字)。これをエージェントの「指示」に貼る。
+プロンプトの本体は [`prompt/chigent.md`](../prompt/chigent.md)(文字数は `npm test` が検査する)。これをエージェントの「指示」に貼る。
 
 ## 設定
 
-- **指示:** `prompt/chigent.md` の全文。**文字数の上限は未確認**(8,000 字前後という情報があるが、製品・設定で異なりうる。D-009)。現状は上限の 7 割ほど。`npm test` が、上限の 95% を超えると失敗する。
+- **指示:** `prompt/chigent.md` の全文。**文字数の上限は未確認**(8,000 字前後という情報があるが、製品・設定で異なりうる。D-009)。`npm test` が、上限の 95% を超えると失敗する。
 - **知識(ウェブ):** エージェントが次のサイトを取得できるようにする。取得できないと、座標とレイヤーを自分の知識で決めることになる。
   - **`https://dwg7.unopengis.org/chigent/index/`(検索用の索引。公開が必要。下の「索引の公開」)**
   - 座標は Copilot 自身の知識とウェブ検索で決める(D-014)。取得できれば、次は住所・市区町村の裏取りに使う任意の参照: `https://msearch.gsi.go.jp/`
@@ -25,7 +25,7 @@
 
 ## 採点
 
-1. `tests/questions/cases.json` の問い(13 件)を 1 件ずつ Copilot に聞く。
+1. `tests/questions/cases.json` の問い(全件)を 1 件ずつ Copilot に聞く。
 2. 返ってきた URL を `answers.json` に `{ "問いのid": "URL" }` で集める(URL を返さなかったら `null`)。
 3. `node scripts/grade.ts answers.json`
 
