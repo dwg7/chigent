@@ -68,3 +68,4 @@ chigent = 問いに対して地理院地図の URL を返すエージェント�
 | `scripts/` | `build-layer-index` `build-search-index` `probe-coverage` `collect-examples` `analyze-examples` `build-tiers` `grade` `collect-answers` |
 | `data/` | `layers-index.json` `layer-tiers.json` `coverage/` `examples/` `seeds/` |
 | `tests/` | `roundtrip/` `questions/`(`cases.json`)ほか |
+- **genkan(2026-10-24、D-028)**: 契約(`#z/lat/lon/&b=..&l=a,b`)と中継ページを試作。公開: `/chigent/genkan/`。サブエージェント 14/14。次は実機(Copilot・源内)での、フラグメントの生存率・フレーム・転送の確認(ユーザー)。`prompt/genkan.md` の複製のずれに注意。

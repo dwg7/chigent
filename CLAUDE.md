@@ -51,3 +51,7 @@ dwg7/evergreen と共有する概念(Staccato の役割、MapIntent の共通部
 利用者から「TRACKS.md に書いて」「踏み跡として残して」「違和感として記録して」などの指示があったら、`TRACKS.md` への追記案を作る。**改善案や設計変更案を書いてはならない。観察の記録に留める**(結論も出さない)。書式と位置づけは `TRACKS.md` の冒頭。改善案にするかは Issue、採用は DECISIONS.md の責務。
 
 設計原則は DECISIONS.md の D-022〜D-025(検索エンジンであり解説エンジンではない / 見方は利用者が決める / 確実性を優先する / 改善の対象外)。ルールを足したくなったら、まずこれに照らす。
+
+## genkan(試作、D-028)
+
+`src/genkan.ts`、`src/gsi-url.ts`、`src/mapintent.ts` を直したら `node --disable-warning=ExperimentalWarning scripts/build-genkan.ts` で `docs/genkan/` の生成物を作り直す(`npm test` が一致を確かめる)。`data/layers-index.json` を更新したときも同じ。仕様は `docs/genkan-spec.md`。`prompt/genkan.md` はコアのプロンプトの複製なので、表や進め方を直したら両方を直す。
