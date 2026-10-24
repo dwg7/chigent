@@ -19,10 +19,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Rebuild the layer index and the search index
+      - name: Rebuild the layer index, the search index and the genkan layer table
         run: |
           node scripts/build-layer-index.ts
           node scripts/build-search-index.ts
+          node --disable-warning=ExperimentalWarning scripts/build-genkan.ts
       - name: Run the tests on the new index
         run: npm test
       - name: Open a pull request if the index changed

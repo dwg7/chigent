@@ -21,3 +21,7 @@ jobs:
         run: |
           node scripts/build-search-index.ts
           git diff --exit-code -- docs/index
+      - name: docs/genkan matches the generator
+        run: |
+          node --disable-warning=ExperimentalWarning scripts/build-genkan.ts
+          git diff --exit-code -- docs/genkan

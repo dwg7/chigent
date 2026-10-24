@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https://maps.gsi.go.jp; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>genkan 地理院地図への玄関</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="brand"><strong>genkan</strong>（玄関）<span>chigent が返す地図の入口</span></p>
+</header>
+<main id="app" aria-live="polite">
+  <noscript>
+    <p>このページは JavaScript で、リンクの内容から地理院地図の URL を組み立てます。JavaScript が使えない環境では、リンクの # 以降の内容（ズーム/緯度/経度と図の指定）を、チャットの回答から読み取って、地理院地図（<a href="https://maps.gsi.go.jp/">maps.gsi.go.jp</a>）で開いてください。</p>
+  </noscript>
+</main>
+<footer>
+  <p>dwg7 の活動です。国土地理院の公式なものではありません。地図は<a href="https://maps.gsi.go.jp/" rel="noopener">地理院地図</a>をそのまま表示します。</p>
+  <p><a href="https://github.com/dwg7/chigent/blob/main/docs/genkan-spec.md" rel="noopener">仕様</a> · <a href="https://github.com/dwg7/chigent" rel="noopener">chigent</a></p>
+</footer>
+<script type="module" src="page.js"></script>
+</body>
+</html>

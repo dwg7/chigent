@@ -1,0 +1,34 @@
+:root {
+  --bg: #fafaf8; --fg: #1d1d1b; --muted: #5b5b57; --line: #d9d8d2; --card: #fff;
+  --accent: #1f5f8b; --accent-fg: #fff; --warn: #8a5a00; --warn-bg: #fff4d6; --err: #8f1d1d; --err-bg: #fde8e8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161615; --fg: #ecebe6; --muted: #a8a7a0; --line: #3a3a37; --card: #1f1f1d;
+    --accent: #7db6e0; --accent-fg: #101010; --warn: #f0c36a; --warn-bg: #2d2511; --err: #ff9d9d; --err-bg: #331818;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+header, main, footer { max-width: 56rem; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 14px; }
+.brand { margin: 0; font-size: 1.05rem; }
+.brand span { color: var(--muted); margin-left: .6em; font-size: .9rem; }
+main { padding-bottom: 8px; }
+h1 { font-size: 1.15rem; line-height: 1.5; margin: .8rem 0 .4rem; overflow-wrap: anywhere; }
+h2 { font-size: 1rem; margin: 1.2rem 0 .3rem; }
+p, ul { margin: .4rem 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin: .8rem 0; }
+.btn { display: inline-block; padding: 8px 14px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-fg); text-decoration: none; font: inherit; cursor: pointer; }
+.btn.secondary { background: transparent; color: var(--accent); }
+.btn:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.note { padding: 8px 12px; border-radius: 6px; margin: .5rem 0; }
+.note.warn { background: var(--warn-bg); color: var(--warn); }
+.note.err { background: var(--err-bg); color: var(--err); }
+.note ul { padding-left: 1.2em; }
+input.url { width: 100%; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--fg); font: .85rem/1.4 ui-monospace, Menlo, monospace; }
+iframe { width: 100%; height: min(70vh, 640px); border: 1px solid var(--line); border-radius: 6px; background: var(--card); margin-top: .6rem; }
+code { font: .9em ui-monospace, Menlo, monospace; background: var(--card); border: 1px solid var(--line); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: .9rem; }
+footer { color: var(--muted); font-size: .85rem; padding-bottom: 24px; margin-top: 1.2rem; border-top: 1px solid var(--line); }
+a { color: var(--accent); }
