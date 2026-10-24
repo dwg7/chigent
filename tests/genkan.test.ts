@@ -85,11 +85,22 @@ test("GSI's own names are read as input (ls = background first, base)", () => {
   assert.deepEqual(b.intent!.overlays, ["relief"]);
 });
 
-test("a photo given as the background is moved to the overlays (seamlessphoto is not a base map)", () => {
+test("b=seamlessphoto is read as b=ort (the photo base map, same tiles); any other non-base id in b becomes an overlay", () => {
   const r = ok(`${G}#15/32.8/130.7/&b=seamlessphoto`);
-  assert.equal(r.intent!.base, "std");
-  assert.deepEqual(r.intent!.overlays, ["seamlessphoto"]);
+  assert.equal(r.intent!.base, "ort");
+  assert.deepEqual(r.intent!.overlays, []);
   assert.ok(r.warnings.length > 0);
+  const o = ok(`${G}#15/32.8/130.7/&b=relief`);
+  assert.equal(o.intent!.base, "std");
+  assert.deepEqual(o.intent!.overlays, ["relief"]);
+});
+
+test("the photo base map is ort: it builds base=ort&ls=ort, as GSI itself writes it", () => {
+  assert.equal(
+    genkanToGsiUrl(`${G}#15/32.8064/130.7058/&b=ort`).url,
+    "https://maps.gsi.go.jp/#15/32.806400/130.705800/&base=ort&ls=ort&disp=1&lcd=ort&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m",
+  );
+  assert.match(summarize(ok(`${G}#15/32.8/130.7/&b=ort`).intent!).text, /^写真、/);
 });
 
 test("latitude and longitude written the wrong way round are fixed when only one order is possible", () => {

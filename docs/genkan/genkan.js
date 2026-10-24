@@ -46,7 +46,7 @@ const BASE_NAMES                         = {
   pale: "淡色地図",
   blank: "白地図",
   english: "English",
-  ort: "電子国土基本図（オルソ画像）",
+  ort: "写真", // layers0.txt の ort は「写真」(タイルは seamlessphoto と同じ)。layers.txt 側の ort(電子国土基本図 オルソ画像)とは別物
 };
 
 function dec(s        )         {
@@ -111,7 +111,11 @@ export function parseGenkan(input        )              {
     overlays = parts;
   }
   if (base === undefined || base === "") base = "std";
-  if (!GENKAN_BASE_IDS.has(base)) {
+  if (base === "seamlessphoto") {
+    // 写真を背景にするのは b=ort(layers0.txt の ort は seamlessphoto と同じタイルの「写真」)。意図は同じなので、読み替える
+    warnings.push("b=seamlessphoto は b=ort(写真)に読み替えました");
+    base = "ort";
+  } else if (!GENKAN_BASE_IDS.has(base)) {
     warnings.push(`b=${base} は背景地図ではないので、重ねる図として扱いました`);
     overlays.unshift(base);
     base = "std";
