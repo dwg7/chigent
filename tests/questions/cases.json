@@ -711,7 +711,7 @@
  {
   "id": "kumamoto-castle-english",
   "question": "Show me the area around Kumamoto Castle in a recent aerial photo.",
-  "basis": "英語の問い。主題は最新の写真(seamlessphoto)",
+  "basis": "英語の問い。主題は最新の航空写真。写真は背景 ort(layers0.txt の「写真」。D-028 追記)で表す",
   "expect": {
    "center": {
     "lat": 32.8064,
@@ -722,12 +722,13 @@
     14,
     17
    ],
-   "layersAny": [
-    [
-     "seamlessphoto"
-    ]
+   "base": [
+    "ort"
    ],
-   "maxOverlays": 1
+   "layersAll": [
+    "ort"
+   ],
+   "maxOverlays": 0
   }
  },
  {
@@ -867,6 +868,53 @@
    ],
    "layersAll": [
     "vlcd_suwanosejima"
+   ],
+   "maxOverlays": 1
+  }
+ },
+ {
+  "id": "korakuen-photo",
+  "question": "岡山後楽園の最新の航空写真を見たい",
+  "basis": "写真は背景 ort で表す。重ねる図は無い(D-028 追記)",
+  "expect": {
+   "center": {
+    "lat": 34.6669,
+    "lon": 133.9351,
+    "withinKm": 3
+   },
+   "zoom": [
+    14,
+    17
+   ],
+   "base": [
+    "ort"
+   ],
+   "layersAll": [
+    "ort"
+   ],
+   "maxOverlays": 0
+  }
+ },
+ {
+  "id": "miyazaki-tsunami-on-photo",
+  "question": "宮崎市の津波浸水想定を、航空写真の上で見たい",
+  "basis": "背景を写真(ort)にして、津波浸水想定を重ねる。baseとlsの先頭は同じ ort",
+  "expect": {
+   "center": {
+    "lat": 31.9077,
+    "lon": 131.4202,
+    "withinKm": 15
+   },
+   "zoom": [
+    10,
+    15
+   ],
+   "base": [
+    "ort"
+   ],
+   "layersAll": [
+    "ort",
+    "04_tsunami_newlegend_data"
    ],
    "maxOverlays": 1
   }

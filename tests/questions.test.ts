@@ -98,14 +98,17 @@ test("answer text: cases that check text fail when only a URL is given; 'not ava
   assert.ok(!gradeAnswer(s, null, index, "ありません。").pass); // 案内先が無い
 });
 
-test("a question back may end with 'でしょうか。'; a photo is an overlay on std, not a base (gsimaps)", () => {
+test("a question back may end with 'でしょうか。'; a photo is the background ort (D-028), not an overlay on std", () => {
   assert.ok(gradeAnswer(byId("chuo-ku-ambiguous"), null, index, "中央区は複数の都市にあります。どの中央区でしょうか。").pass);
   const c = byId("kumamoto-castle-english");
-  const OK = "https://maps.gsi.go.jp/#15/32.806100/130.705800/&base=std&ls=std%7Cseamlessphoto&blend=0&disp=11&lcd=seamlessphoto&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
+  const OK = "https://maps.gsi.go.jp/#15/32.806400/130.705800/&base=ort&ls=ort&disp=1&lcd=ort&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
   assert.ok(gradeAnswer(c, OK, index).pass, JSON.stringify(gradeAnswer(c, OK, index)));
-  const SOLO = "https://maps.gsi.go.jp/#15/32.806100/130.705800/&base=std&ls=seamlessphoto&disp=1&lcd=seamlessphoto&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
-  assert.ok(!gradeAnswer(c, SOLO, index).pass); // base=std と ls[0] が食い違う
-  assert.ok(!gradeAnswer(c, OK.replace("base=std", "base=seamlessphoto"), index).pass);
+  const STD_PLUS = "https://maps.gsi.go.jp/#15/32.806400/130.705800/&base=std&ls=std%7Cseamlessphoto&blend=0&disp=11&lcd=seamlessphoto&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
+  assert.ok(!gradeAnswer(c, STD_PLUS, index).pass); // 有効な形だが、写真は ort で書くと決めた
+  const SOLO = "https://maps.gsi.go.jp/#15/32.806400/130.705800/&base=std&ls=seamlessphoto&disp=1&lcd=seamlessphoto&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
+  assert.ok(!gradeAnswer(c, SOLO, index).pass); // base と ls[0] の食い違い
+  const HAZ = "https://maps.gsi.go.jp/#12/31.907700/131.420200/&base=ort&ls=ort%7C04_tsunami_newlegend_data&blend=0&disp=11&lcd=04_tsunami_newlegend_data&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
+  assert.ok(gradeAnswer(byId("miyazaki-tsunami-on-photo"), HAZ, index).pass);
 });
 
 test("a link the genkan page had to repair counts as a producer failure", () => {

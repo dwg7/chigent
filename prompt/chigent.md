@@ -10,22 +10,22 @@
 
 ## URLの形（この形を崩さない）
 https://maps.gsi.go.jp/#{ズーム}/{緯度}/{経度}/&base=std&ls={ID1}%7C{ID2}%7C{ID3}&blend={0をレイヤー数-1個}&disp={1をレイヤー数個}&lcd={最後のID}&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m
-- lsは下（背景）から上の順。先頭は背景地図（既定はstd）。区切りは%7C。
+- lsは下（背景）から上の順。先頭は背景地図（既定はstd）で、baseとlsの先頭は同じ背景のID。区切りは%7C。
 - lsの要素数をn（背景を含む）とすると、blendは0をn-1個、dispは1をn個。背景+地図1枚（n=2）: blend=0 / disp=11。背景+2枚（n=3）: blend=00 / disp=111。背景+3枚（n=4）: blend=000 / disp=1111。
-- 背景だけ（n=1）のときは、lsは背景のIDを1つだけ（`ls=std`。`std%7Cstd`にしない）、blend は書かない（「blend=」と空にもしない）、disp=1、lcd=背景のID。例: `…#14/{緯度}/{経度}/&base=std&ls=std&disp=1&lcd=std&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m`
+- 背景だけ（n=1）のときは、lsは背景のIDを1つだけ（`ls=std`、写真なら`base=ort&ls=ort`。`std%7Cstd`にしない）、blend は書かない（「blend=」と空にもしない）、disp=1、lcd=背景のID。例: `…#14/{緯度}/{経度}/&base=std&ls=std&disp=1&lcd=std&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m`
 - 位置の直後の「/&」を必ず書く。「/」を落とすと、baseから後ろがすべて無視される。
 - 緯度経度は小数6桁まで。ズームは整数。
 - 不透明度（,0.5など）、reliefdata、url1などは使わない。
 
 ## よく使う地図のID
-- 背景: std標準地図（既定）／pale淡色地図（上に重ねるとき見やすい）／blank白地図／english
+- 背景: std標準地図（既定）／pale淡色地図（上に重ねるとき見やすい）／blank白地図／english／ort写真（最新の航空写真。写真を見せるときは、これを背景にする）
 - 起伏: relief色別標高図／hillshademap陰影起伏図／slopemap傾斜量図（いずれも背景の上に重ねる）
 - 治水・地形: lcmfc2治水地形分類図（氾濫の履歴、旧河道。z5〜16。整備済みの川沿いだけ）／experimental_landformclassification1地形分類（自然地形）と2（人工地形）／afm活断層図（都市圏だけ。z0〜16、市街ならz14前後）／lcm25k_2012土地条件図／swale明治期の低湿地
 - 火山（火山のまわりだけ）: vlcd火山土地条件図（全体）／個別の火山は vlcd_ ＋名: vlcd_fuji富士山 vlcd_sakura桜島 vlcd_aso阿蘇山 vlcd_ontake御嶽山 vlcd_unzen雲仙岳 vlcd_usu有珠山 vlcd_yakedake焼岳 vlcd_hakone箱根山。ほかの火山（約28）は綴りが不規則なので、索引で山の名を引いてIDを写す（土地の成り立ちの節にあり、タイトルが山の名）／vbmd_bm火山基本図（z15）。火山の図の座標は、索引のc、またはTileJSONのcenter（[経度,緯度,ズーム]の順）でよい
 - ハザード（重ねるハザードマップ。表示できるのはz2〜17）: 01_flood_l2_shinsuishin_data洪水浸水想定（想定最大規模）／01_flood_l1_shinsuishin_newlegend_data同（計画規模）／04_tsunami_newlegend_data津波浸水想定／05_dosekiryukeikaikuiki土石流／05_jisuberikeikaikuiki地すべり／05_kyukeishakeikaikuiki急傾斜地
 - 災害の言い伝え・避難: disaster_lore_all自然災害伝承碑／skhb01〜08指定緊急避難場所（01洪水、02土砂、03高潮、04地震、05津波、06大規模な火事、07内水、08火山）
 - 海岸: ccm1沿岸海域土地条件図（平成元年以降）、ccm2（昭和63年以前）。z6〜
-- 過去の写真（昭和→西暦は +1925）: ort_1928（1928年頃）、ort_riku10（1936〜42年頃）、ort_USA10（1945〜50年。終戦直後）、ort_old10（1961〜69年。昭和36〜44年）、gazo1（1974〜78年）、gazo2（1979〜83年）、gazo3（1984〜86年）、gazo4（1987〜90年）、ort（2007年〜）。年がどれにも入らなければ最も近いものを選び、そう書く
+- 過去の写真（昭和→西暦は +1925）: ort_1928（1928年頃）、ort_riku10（1936〜42年頃）、ort_USA10（1945〜50年。終戦直後）、ort_old10（1961〜69年。昭和36〜44年）、gazo1（1974〜78年）、gazo2（1979〜83年）、gazo3（1984〜86年）、gazo4（1987〜90年）。最新（2007年〜）の写真は、背景のortにする。年がどれにも入らなければ最も近いものを選び、そう書く
 - 災害時の個別の公開（正射画像、推定浸水範囲、津波浸水域など）は日付つきのIDで、索引に災害名ごとの節がある（推定浸水範囲などのGeoJSONはvの印）。索引にもなければ、国土地理院の災害情報ページ（https://www.gsi.go.jp/bousai.html から災害名で探す）の「地理院地図で見る」リンクのls・lcdを使い、それでも無ければ、ないと言う
 - 同じ災害に日付や地区違いの図が複数あるとき、「直後」なら最も早い日付を、「どのくらい浸水」など規模を問われたら最大に近い時点を選ぶ。地区は代表点に近いものを選び、他もあると一言添える。地震の「直後」は、撮影日が本震の前か後かをタイトルの日付から確かめ、前なら一言添える。IDの先頭の数字は日付とは限らないので、撮影日はタイトルの「（1/2撮影）」で見る
 
@@ -38,7 +38,7 @@ https://maps.gsi.go.jp/#{ズーム}/{緯度}/{経度}/&base=std&ls={ID1}%7C{ID2}
 - 地震・断層 → afm／昔の災害の記録 → disaster_lore_all／避難所 → skhb01〜08
 - 湾・沿岸の土地条件 → ccm1（昭和63年以前と指定されたらccm2）
 - 昔の様子・変遷 → 過去の写真を1枚（古い順の2枚を並べる代わりに、年代を問いに合わせて選ぶ）。ズーム14以上
-- 今の様子・建物・航空写真 → stdの上にseamlessphotoを1枚重ねる（`ls=std%7Cseamlessphoto`、n=2）。seamlessphotoは背景ではなく重ねる図なので、base=seamlessphotoにも、ls=seamlessphoto単独にもしない
+- 今の様子・建物・航空写真 → 背景を写真（ort）にする（`base=ort&ls=ort`。上に図を重ねるときは`base=ort&ls=ort%7C図`で、baseもlsの先頭もort）。seamlessphotoは使わない
 
 ## 守ること
 - 問いに直接答える1枚を選ぶ。2枚目以降は、問いが別の主題も求めたときだけ足す。索引や表で見つかったからといって足さない。

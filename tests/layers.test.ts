@@ -64,3 +64,11 @@ test("validate warns when the view zoom is outside the layer's range", () => {
   const r = validate(parseGsiUrl(`#${z[1] + 1}/35.7/139.7/&base=std&ls=std|DisasterHist_flood_tokyo&disp=11`).intent, index);
   assert.ok(r.issues.some((i) => i.code === "zoom_outside_layer"));
 });
+
+test("a base map in ls[0] is judged by layers0.txt, not by the catalog: ort (photo, z2-18) at zoom 12 is fine", () => {
+  const index = loadLayerIndex();
+  const u = "https://maps.gsi.go.jp/#12/32.8/130.7/&base=ort&ls=ort&disp=1&lcd=ort&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
+  const v = validate(parseGsiUrl(u).intent, index);
+  assert.ok(v.ok);
+  assert.ok(!v.issues.some((i) => i.code === "zoom_outside_layer"), JSON.stringify(v.issues));
+});

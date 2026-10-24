@@ -104,7 +104,9 @@ export function validate(intent: GsiMapIntent, index: LayerIndex): ValidateResul
       else add("error", "unknown_layer", `layer '${l.id}' is not in layers.txt`);
     } else if (e.s === "group") add("info", "layer_group", `layer '${l.id}' is a LayerGroup (shows its members)`);
     else if (e.s !== "catalog") add("info", "not_in_catalog", `layer '${l.id}' is not in the layers-martin catalog (${e.s}${e.x ? " " + e.x : ""})`);
-    if (e?.z && (view.zoom < e.z[0] || view.zoom > e.z[1])) {
+    // ls[0] の背景地図は layers0.txt のもの。索引は layers.txt(catalog)で、同じ ID の別の図(ort = 電子国土基本図 オルソ画像、z14-18)を指すことがあるので、範囲は見ない
+    const isBase = i === 0 && BASE_IDS.has(l.id);
+    if (!isBase && e?.z && (view.zoom < e.z[0] || view.zoom > e.z[1])) {
       add("warning", "zoom_outside_layer", `layer '${l.id}' is available at zoom ${e.z[0]}..${e.z[1]}, view is ${view.zoom}`);
     }
     if (seen.has(l.id)) add("warning", "duplicate_layer", `layer '${l.id}' appears more than once`);
