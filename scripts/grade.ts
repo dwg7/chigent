@@ -15,7 +15,7 @@ for (const c of cases) {
   if (!(c.id in answers)) { console.log(`-    ${c.id}: (no answer)`); continue; }
   total++;
   const a = splitAnswerValue(answers[c.id]);
-  const g = gradeAnswer(c, a.url, undefined, a.text);
+  const g = gradeAnswer(c, a.url, undefined, a.text, a.repairs);
   if (g.pass) pass++;
   console.log(`${g.pass ? "PASS" : "FAIL"} ${c.id}: ${c.question}`);
   for (const f of g.failures) console.log(`       ✗ ${f}`);

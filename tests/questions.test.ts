@@ -107,3 +107,10 @@ test("a question back may end with 'でしょうか。'; a photo is an overlay o
   assert.ok(!gradeAnswer(c, SOLO, index).pass); // base=std と ls[0] が食い違う
   assert.ok(!gradeAnswer(c, OK.replace("base=std", "base=seamlessphoto"), index).pass);
 });
+
+test("a link the genkan page had to repair counts as a producer failure", () => {
+  const c = byId("takaosan-place");
+  const U = "https://maps.gsi.go.jp/#14/35.625100/139.243500/&base=std&ls=std&disp=1&lcd=std&vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&d=m";
+  assert.ok(gradeAnswer(c, U, index, "重ねたい地図があれば言ってください", []).pass);
+  assert.ok(!gradeAnswer(c, U, index, undefined, ["緯度と経度が逆に書かれていたので入れ替えました"]).pass);
+});

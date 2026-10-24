@@ -53,10 +53,10 @@ const km = (a: { lat: number; lon: number }, b: { lat: number; lon: number }) =>
 };
 
 /** answers.json の一つの値: URL だけ(文字列か null)、または回答文つき。 */
-export type AnswerValue = string | null | { url: string | null; text: string };
+export type AnswerValue = string | null | { url: string | null; text?: string; repairs?: string[] };
 
-export function splitAnswerValue(v: AnswerValue): { url: string | null; text?: string } {
-  return v !== null && typeof v === "object" ? { url: v.url, text: v.text } : { url: v };
+export function splitAnswerValue(v: AnswerValue): { url: string | null; text?: string; repairs?: string[] } {
+  return v !== null && typeof v === "object" ? { url: v.url, text: v.text, repairs: v.repairs } : { url: v };
 }
 
 /** 回答文の検査(D-022〜D-024): URL が先、説明は短く、聞き返しは質問だけ、「ない」と言う、など。 */
@@ -82,8 +82,10 @@ function gradeText(e: QuestionCase["expect"], url: string | null, text: string |
 }
 
 /** answer は Copilot が返した URL。URL を返さなかったときは null。text は回答文(あれば回答文も採点する)。 */
-export function gradeAnswer(c: QuestionCase, answer: string | null, index: LayerIndex = loadLayerIndex(), text?: string): Grade {
+/** repairs: 受け手(genkan のページ)が直して読んだ点。送り手が仕様の外の形を出した印なので、失敗にする。 */
+export function gradeAnswer(c: QuestionCase, answer: string | null, index: LayerIndex = loadLayerIndex(), text?: string, repairs: string[] = []): Grade {
   const failures: string[] = [], warnings: string[] = [];
+  for (const r of repairs) failures.push(`the link needed repair (outside the defined form): ${r}`);
   const e = c.expect;
   gradeText(e, answer, text, failures, warnings);
   if (e.asks) {
