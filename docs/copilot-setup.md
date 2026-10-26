@@ -1,5 +1,7 @@
 # Microsoft 365 Copilot のエージェントに載せる
 
+> 実機での測定(Copilot と源内、コアと genkan の比較)の手順は [`docs/field-test.md`](field-test.md)。このページは、Copilot への載せ方と、確かめたい項目の一覧。
+
 プロンプトの本体は [`prompt/chigent.md`](../prompt/chigent.md)(文字数は `npm test` が検査する)。これをエージェントの「指示」に貼る。
 
 ## 設定

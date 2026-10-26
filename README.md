@@ -41,7 +41,7 @@ chigent は **Staff** の実装です。Cartographer には、現世代の地理
 - [x] 問い 43 件の採点(回答文の採点を含む)([tests/questions/cases.json](tests/questions/cases.json)、`scripts/grade.ts`)。Claude のサブエージェントでの検証結果は DECISIONS.md の D-015〜D-021(モデルを下げた回、同じ問いを繰り返した回を含む)
 - [x] CI(テストと索引の整合の確認。週次の索引更新。[.github/workflows/](.github/workflows/))
 - [x] **genkan(試作)**: 短いリンクの契約と、地理院の URL を組み立てる中継ページ(<https://dwg7.unopengis.org/chigent/genkan/>)。仕様は [docs/genkan-spec.md](docs/genkan-spec.md)、プロンプトは [prompt/genkan.md](prompt/genkan.md)(D-028)
-- [ ] Copilot の実機での検証と採点([docs/copilot-setup.md](docs/copilot-setup.md))
+- [ ] 実機(Microsoft 365 Copilot、源内)での測定と採点: 手順は [docs/field-test.md](docs/field-test.md)、設定は [docs/copilot-setup.md](docs/copilot-setup.md)(2026-11 の予定)
 - [ ] 利用者の実際の問いの例の収集(いまの「核」は地理院のサイトの写しにすぎない)
 - [ ] 2 画面表示(昔と今を並べる)への対応
 - [ ] `geocode` `find_examples`(プロンプト方式では、いまのところ不要)
@@ -54,6 +54,7 @@ chigent は **Staff** の実装です。Cartographer には、現世代の地理
 |---|---|
 | `scripts/build-layer-index.ts` | layers-martin から `data/layers-index.json` を作る |
 | `scripts/build-search-index.ts` | 公開用の索引 `docs/index/`(`coverage.txt` を含む)を作る |
+| `scripts/field-sheet.ts` | 実機測定の記録表(能力の確認、短縮 8 問・全 14 問)を作る |
 | `scripts/build-genkan.ts` | genkan のページが使う JS(`src/` から生成)と図の表を作る |
 | `scripts/probe-coverage.ts` | 地理院のタイルサーバーに低頻度で問い合わせ、図の整備範囲を実測する |
 | `scripts/collect-examples.ts` `analyze-examples.ts` `build-tiers.ts` | 事例の収集、分析、核・周辺の判定 |
