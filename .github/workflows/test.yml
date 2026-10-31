@@ -25,3 +25,7 @@ jobs:
         run: |
           node --disable-warning=ExperimentalWarning scripts/build-genkan.ts
           git diff --exit-code -- docs/genkan
+      - name: prompt/ matches the generator
+        run: |
+          node scripts/build-prompts.ts
+          git diff --exit-code -- prompt

@@ -54,6 +54,7 @@ chigent は **Staff** の実装です。Cartographer には、現世代の地理
 |---|---|
 | `scripts/build-layer-index.ts` | layers-martin から `data/layers-index.json` を作る |
 | `scripts/build-search-index.ts` | 公開用の索引 `docs/index/`(`coverage.txt` を含む)を作る |
+| `scripts/build-prompts.ts` | プロンプトの元(`prompt/src/prompt.md`)から、コアと genkan の 2 本を生成する(D-029) |
 | `scripts/field-sheet.ts` | 実機測定の記録表(能力の確認、短縮 8 問・全 14 問)を作る |
 | `scripts/build-genkan.ts` | genkan のページが使う JS(`src/` から生成)と図の表を作る |
 | `scripts/probe-coverage.ts` | 地理院のタイルサーバーに低頻度で問い合わせ、図の整備範囲を実測する |

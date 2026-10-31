@@ -44,7 +44,7 @@ dwg7/evergreen と共有する概念(Staccato の役割、MapIntent の共通部
 4. `node scripts/build-tiers.ts` → `data/layer-tiers.json`、`docs/layer-tiers.md`。
 5. レイヤー索引は `node scripts/build-layer-index.ts`(layers-martin から。D-008、D-010)。
 6. 検索用の小さな索引(公開用)は `node scripts/build-search-index.ts` → `docs/index/`(D-017)。`data/layers-index.json` を更新したら作り直す。`npm test` が、生成物と公開ファイルの一致を確かめる。
-7. プロンプトを直したら、`npm test`(例の URL・ID・文字数)→ サブエージェントに `tests/questions/cases.json` の問いを解かせる → `scripts/grade.ts` で採点(D-016、D-017)。
+7. プロンプトを直したら(元は `prompt/src/prompt.md`。`node scripts/build-prompts.ts` で 2 本を作り直す)、`npm test`(例の URL・ID・文字数)→ サブエージェントに `tests/questions/cases.json` の問いを解かせる → `scripts/grade.ts` で採点(D-016、D-017)。
 
 ## 踏み跡(TRACKS.md)
 
@@ -54,4 +54,4 @@ dwg7/evergreen と共有する概念(Staccato の役割、MapIntent の共通部
 
 ## genkan(試作、D-028)
 
-`src/genkan.ts`、`src/gsi-url.ts`、`src/mapintent.ts` を直したら `node --disable-warning=ExperimentalWarning scripts/build-genkan.ts` で `docs/genkan/` の生成物を作り直す(`npm test` が一致を確かめる)。`data/layers-index.json` を更新したときも同じ。仕様は `docs/genkan-spec.md`。`prompt/genkan.md` はコアのプロンプトの複製なので、表や進め方を直したら両方を直す。
+`src/genkan.ts`、`src/gsi-url.ts`、`src/mapintent.ts` を直したら `node --disable-warning=ExperimentalWarning scripts/build-genkan.ts` で `docs/genkan/` の生成物を作り直す(`npm test` が一致を確かめる)。`data/layers-index.json` を更新したときも同じ。仕様は `docs/genkan-spec.md`。**プロンプトの元は `prompt/src/prompt.md`**(D-029)。`prompt/chigent.md`(コア)と `prompt/genkan.md` はここから `node scripts/build-prompts.ts` で生成するので、直すのは元だけ(生成物は直接は編集しない。`npm test` が一致を確かめる)。共通の行はそのまま、違いは `<!--core-->…<!--genkan-->…<!--/-->` か `{{core:…}}{{genkan:…}}` で書く。
